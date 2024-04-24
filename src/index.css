@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+}
+input[type="range"], input[type="checkbox"] {
+  cursor: pointer;
+}
+p {
+  font-size: 16px;
+}
+
+.app {
+  background-color: #F6F5F2;
+  height: 100vh;
+  overflow: scroll;
+}
+.app::-webkit-scrollbar {
+  display: none;
+}
+.appBody {
+  min-height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0px 0px 10px lightgray;
+}
+
+
+/* FONTS------------------------------------------------- */
+.title {
+  font-size: 1.5rem;
+  font-weight: 640;
+}
+.link {
+  font-size: 1.1rem;
+  font-weight: 550;
+  cursor: pointer;
+}
+.link:hover {
+  color: purple;
+}
+.md-font {
+  font-size: 1.1rem;
+}
+.password {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(46, 46, 46);
+}
+.error {
+  color: red;
+  text-align: start;
+}
+.key {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+/* -------------------------------------------------------- */
+
+/* FLEX-------------------------------------------------- */
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-h {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-v {
+  display: flex;
+  flex-direction: column;
+}
+.flex-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-s {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-e {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.center-both {
+  display: grid;
+  place-items: center;
+  min-height: 75vh;
+}
+/* --------------------------------------------------- */
+
+/* BUTTONS---------------------------------------------- */
+.button, .input {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* ---------------------------------------------- */
+
+/* ----------------------------------------------------- */
+.inputBox {
+  border: 1px solid lightgray;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+}
+.inputBox input {
+  border: none;
+  height: 100%;
+  flex: 1;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+}
+.container {
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  padding: 1rem;
+}
+.lightpContainer {
+  border: 1px solid lightgray;
+  border-radius: 0.2rem;
+  padding: 1rem;
+}
+.lightContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+  border-radius: 0.2rem;
+  border: 1px solid lightgray;
+}
+.bigContainer {
+  display: flex;
+  align-items: center;
+  padding: 2rem 1rem;
+  border: 1px solid gray;
+}
+/* --------------------------------------------------------------- */
+
+.round {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}

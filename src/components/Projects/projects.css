@@ -1,0 +1,283 @@
+:root {
+    --hoverColor: rgba(211, 211, 211, 0.339);
+}
+
+.sidebarBody, .progressbarBody, .loadmoreBody, .paginationBody, .tabsBody, .passwordgenBody, .searchBody, .imagesliderBody, .accordionBody, .modalpageBody, .weatherBody, .scrollbody, .tictactoeBody, .reactpageBody, .javapageBody, .flowingnotesBody, .dadnotesBody {
+    gap: 2rem;
+}
+
+.sidebarBody .header {
+    gap: 0.5rem;
+}
+.sidebarBody .links {
+    gap: 1rem;
+}
+.sidebar .header .icon:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.progress {
+    height: 2rem;
+    min-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    background-color: var(--hoverColor);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.progress span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.progress div {
+    background-color: #00c251;
+    height: 100%;
+}
+
+.loadmoreBody .items {
+    gap: 1rem;
+}
+
+.tabContainer {
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    min-height: 20rem;
+}
+.tabsContent {
+    padding: 1rem;
+}
+.tabsHeader {
+    border-bottom: 1px solid lightgray;
+}
+.tabName {
+    padding: 0.5rem 1.2rem;
+    font-weight: 500;
+    border-right: 1px solid lightgray;
+    cursor: pointer;
+    gap: 0.6rem;
+}
+.tabName:hover {
+    background-color: var(--hoverColor);
+}
+.tabRemoveButton {
+    background-color: transparent;
+    border: none;
+}
+.tabRemoveButton .icon {
+    background-color: var(--hoverColor);
+    font-size: 1rem;
+}
+.tabRemoveButton .icon:hover {
+    color: wheat;
+    background-color: red;
+}
+.tabName .tabRemoveButton {
+    margin-top: 0.2rem;
+}
+
+.passwordgenContainer {
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    padding: 2rem 1rem;
+    gap: 1rem;
+}
+.passwordgenPassword {
+    border: 1px solid lightgray;
+    padding-left: 1rem;
+    border-radius: 0.2rem;
+}
+.passwordgenChoices {
+    gap: 1rem;
+}
+.charLength {
+    gap: 0.5rem;
+}
+.passwordgenGenButton {
+    justify-content: end !important;
+}
+.passCheckboxContainer {
+    gap: 0.2rem;
+}
+.passCheckboxes {
+    border: 1px solid lightgray;
+    border-radius: 0.2rem;
+    padding: 0.8rem;
+}
+.passCheckbox {
+    gap: 0.2rem;
+}
+.passCheckbox p {
+    margin-bottom: 0.2rem;
+}
+.strengthContainer {
+    border: 1px solid lightgray;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+.strengthInfo {
+    font-weight: 600;
+    color: white;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.searchMain {
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    min-height: 20rem;
+    padding: 2rem 1rem;
+}
+.suggestions {
+    background-color: var(--hoverColor);
+    text-align: center;
+    padding-top: 0.5rem;
+}
+.suggestion {
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    cursor: pointer;
+    padding-bottom: 0.5rem;
+}
+.suggestion:hover {
+    background-color: var(--hoverColor);
+}
+
+.slider {
+    gap: 0.5rem;
+}
+.image img {
+    width: 40rem;
+    border-radius: 0.2rem;
+}
+.image .inactiveImage {
+    display: none;
+}
+.buttons {
+    justify-content: center;
+}
+
+.accordionBox {
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 0.2rem;
+    padding-bottom: 1rem;
+}
+.accordionContainer {
+    gap: 1rem;
+}
+.accordionBoxes {
+    gap: 1rem;
+}
+.accordionBoxQuestion .button {
+    padding: 0rem 0.5rem;
+}
+.accordionHeader {
+    justify-content: end !important;
+}
+
+.gitfinderBody {
+    gap: 2rem;
+}
+.gitfinderContainer {
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    padding: 2rem 1rem;
+}
+.profile {
+    gap: 1rem;
+}
+.profileDetails {
+    gap: 2rem;
+    justify-content: center;
+}
+.profileDetails img {
+    width: 15rem;
+    border-radius: 50%;
+}
+.profileDetailsHeader .link {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+.profileDetailsText {
+    gap: 0.5rem;
+}
+.profileDetailsText .md-font {
+    color: rgba(0, 0, 0);
+}
+
+.modalpageContainer {
+    gap: 1rem;
+}
+.modal {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.306);
+}
+.modalBody {
+    inset: 0;
+    width: 40rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    gap: 1rem;
+}
+.modalFooterButton {
+    justify-content: end !important;
+}
+
+.weatherContainer {
+    gap: 1rem;
+}
+.weatherContainer .container {
+    padding: 1rem;
+}
+.weatherbox {
+    gap: 1rem;
+}
+.weatherboxDetails {
+    gap: 0.5rem;
+}
+
+.scrollbodyContainer {
+    gap: 1rem;
+}
+.stbitems {
+    gap: 0.5rem;
+}
+
+.tictactoeContainer {
+    gap: 1rem;
+}
+.board {
+    width: calc(3 * 6rem);
+    margin: auto;
+}
+.cell {
+    width: 6rem;
+    height: 6rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    border: 1px solid gray;
+    color: rgba(0, 0, 0, 0.85);
+    transition: background-color 0.3s ease-in-out;
+}
+.cell:hover {
+    background-color: lightgray;
+}
+.tictactoeHeader {
+    margin-bottom: 1rem;
+}
+
+.dadnotesContainer {
+    min-height: 30rem;
+}
