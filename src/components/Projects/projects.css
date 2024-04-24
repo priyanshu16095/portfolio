@@ -131,6 +131,10 @@
     border-radius: var(--borderRadius);
 }
 
+.loadmoreContainer {
+    gap: 1rem;
+}
+
 .suggestions {
     background-color: var(--hoverColor);
     text-align: center;

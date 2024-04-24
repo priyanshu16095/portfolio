@@ -38,7 +38,7 @@ function LoadMore() {
 
             <div className="loadmoreBody flex-v">
                 <p className="title">Load More ({items.length})</p>
-                <div className="loadmorContainer">
+                <div className="loadmoreContainer flex-v">
                     <div className="items flex-v">
                         {items && items.length ?
                             items.map(item => <p key={item.id}>{item.title}</p>)
