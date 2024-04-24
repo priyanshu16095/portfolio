@@ -60,7 +60,7 @@ function SearchAutoComplete() {
 
         <div className="searchBody flex-v">
             <p className="title">Search Auto Complete</p>
-            <div className="searchMain flex-v">
+            <div className="searchContainer bigContainer flex-v">
               
               <div className="inputBox flex-h">
                 <input value={searchParam} type="text" placeholder='Search...' onChange={e => handleChange(e)} />

@@ -3,6 +3,7 @@ import './style.css'
 import mine_img from '../assets/mine_img.jpg'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LightModeIcon from '@mui/icons-material/LightMode';
 import MenuIcon from '@mui/icons-material/Menu';
 
 function Navbar() {
@@ -21,6 +22,7 @@ function Navbar() {
             <button className="button">Download CV</button>
             <div className="round"><LinkedInIcon /></div>
             <div className="round"><GitHubIcon /></div>
+            <div className="round"><LightModeIcon /></div>
             <div className="round"><MenuIcon /></div>
           </div>
         </div>

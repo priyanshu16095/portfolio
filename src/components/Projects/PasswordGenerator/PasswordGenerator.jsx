@@ -40,9 +40,9 @@ function PasswordGenerator() {
         <div className="passwordgenBody flex-v">
             <p className="title">Password Generator</p>
 
-            <div className='passwordgenContainer flex-v'>
+            <div className='passwordgenContainer bigContainer flex-v'>
 
-                <div className="passwordgenPassword flex-h">
+                <div className="passwordgenPassword lightContainer">
                     <p className='password'>{password}</p>
                     <button className="button" onClick={handleCopy}>{isCopied ? 'Copied' : 'Copy'}</button>
                 </div>
@@ -54,7 +54,7 @@ function PasswordGenerator() {
                     </div>
 
                     <div className='passCheckboxContainer flex-v'>
-                        <div className="passCheckboxes flex-h">
+                        <div className="passCheckboxes lightContainer flex-h">
                             {checkboxData.map((checkbox, index) => {
                                 return (
                                     <div key={index} className='passCheckbox flex'>

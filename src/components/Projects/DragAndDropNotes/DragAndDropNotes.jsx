@@ -21,7 +21,7 @@ function DragAndDropNotes() {
 
             <div className="dadnotesBody flex-v">
                     <p className="title">Drag and Drop Notes</p>
-                <div className="dadnotesContainer container">
+                <div className="dadnotesContainer bigContainer">
                     <div className='inputBox'>
                         <input
                             type="text"

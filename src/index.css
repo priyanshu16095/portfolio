@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+:root {
+  --borderRadius: 8px;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -19,9 +22,9 @@ p {
 }
 
 .app {
-  background-color: #F6F5F2;
   height: 100vh;
   overflow: scroll;
+  background-color: #F6F5F2;
 }
 .app::-webkit-scrollbar {
   display: none;
@@ -34,6 +37,26 @@ p {
   box-shadow: 0px 0px 10px lightgray;
 }
 
+/* ------------------------DARK-MODE------------------ */
+/* .app {
+  background-color: #111111;
+}
+.appBody {
+  background-color: #000000;
+  box-shadow: none;
+}
+.container, .lightContainer, .lightpContainer, .bigContainer {
+  border: 2px solid #333333 !important;
+  border-radius: 8px;
+}
+.inputBox {
+  border: 2px solid #333333 !important;
+  border-radius: 8px;
+}
+.button {
+  background-color: #ededed;
+  color: rgba(0, 0, 0, 0.7);
+} */
 
 /* FONTS------------------------------------------------- */
 .title {
@@ -103,20 +126,23 @@ p {
 /* --------------------------------------------------- */
 
 /* BUTTONS---------------------------------------------- */
-.button, .input {
+.button {
   width: fit-content;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 550;
+  /* border: none; */
 }
 /* ---------------------------------------------- */
 
 /* ----------------------------------------------------- */
 .inputBox {
-  border: 1px solid lightgray;
-  border-radius: 0.2rem;
   display: flex;
   align-items: center;
+  border-radius: var(--borderRadius);
+  border: 1px solid lightgray;
+  /* border: 2px solid #333333 !important; */
+  /* border-radius: 8px; */
 }
 .inputBox input {
   border: none;
@@ -124,30 +150,38 @@ p {
   flex: 1;
   font-size: 1.1rem;
   padding: 0.5rem 1rem;
+  border-radius: var(--borderRadius);
 }
 .container {
-  border: 1px solid gray;
-  border-radius: 0.2rem;
   padding: 1rem;
+  border-radius: var(--borderRadius);
+  border: 1px solid gray;
+  /* border: 2px solid #333333 !important; */
+  /* border-radius: 8px; */
 }
 .lightpContainer {
-  border: 1px solid lightgray;
-  border-radius: 0.2rem;
   padding: 1rem;
+  border-radius: var(--borderRadius);
+  border: 1px solid lightgray;
+  /* border: 2px solid #333333 !important; */
+  /* border-radius: 8px; */
 }
 .lightContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 0.5rem;
-  border-radius: 0.2rem;
+  border-radius: var(--borderRadius);
   border: 1px solid lightgray;
+  /* border: 2px solid #333333 !important; */
+  /* border-radius: 8px; */
 }
 .bigContainer {
-  display: flex;
-  align-items: center;
   padding: 2rem 1rem;
   border: 1px solid gray;
+  border-radius: var(--borderRadius);
+  /* border: 2px solid #333333 !important; */
+  /* border-radius: 8px; */
 }
 /* --------------------------------------------------------------- */
 
@@ -167,5 +201,5 @@ p {
   font-weight: 600;
   background-color: rgba(211, 211, 211, 0.435);
   width: fit-content;
-  border-radius: 0.2rem;
+  border-radius: var(--borderRadius);
 }

@@ -9,7 +9,7 @@ function GithubProfileFinder() {
             <div className="gitfinderBody flex-v">
                 <p className="title">Github Profile Finder</p>
 
-                <div className="gitfinderContainer">
+                <div className="gitfinderContainer bigContainer">
                     <Profile />
                 </div>
             </div>
