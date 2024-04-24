@@ -162,3 +162,10 @@ p {
   border: 1px solid lightgray;
   cursor: pointer;
 }
+.label {
+  padding: 0.2rem 0.5rem;
+  font-weight: 600;
+  background-color: rgba(211, 211, 211, 0.435);
+  width: fit-content;
+  border-radius: 0.2rem;
+}
