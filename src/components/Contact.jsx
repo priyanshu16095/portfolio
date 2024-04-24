@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div className='contact'>
       <div className="contactBody">
-        <div className="contactContainer flex-v lightpContainer">
+        <div className="contactContainer flex-v container">
           <div className="contactHeader flex-h">
             <p className="title">Contact</p>
             <p className='label'>React Hook Form</p>

@@ -10,9 +10,9 @@ function Navbar() {
   return (
     <div className='navbar'>
       <div className="navbarBody">
-        <div className="navbarContainer lightpContainer flex-s">
-          <div className="navbarLeft flex">
-            <div className="round"><img src={mine_img} className='mine_img' /></div>
+        <div className="navbarContainer flex-s">
+          <div className="navbarLeft">
+            <div className=""><img src={mine_img} className='mine_img' /></div>
             <div className="info flex-v">
               <p className="name">Priyanshu Gupta</p>
               <p className="email">priyanshu@gmail.com</p>
@@ -20,10 +20,10 @@ function Navbar() {
           </div>
           <div className="navbarRight flex">
             <button className="button">Download CV</button>
-            <div className="round"><LinkedInIcon /></div>
-            <div className="round"><GitHubIcon /></div>
-            <div className="round"><LightModeIcon /></div>
-            <div className="round"><MenuIcon /></div>
+            <div className="round"><LinkedInIcon className='icon' /></div>
+            <div className="round"><GitHubIcon className='icon' /></div>
+            <div className="round"><LightModeIcon className='icon' /></div>
+            <div className="round"><MenuIcon className='icon' /></div>
           </div>
         </div>
       </div>

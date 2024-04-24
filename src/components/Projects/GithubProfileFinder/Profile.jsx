@@ -51,7 +51,7 @@ function Profile() {
       </div>
 
       {data && (
-        <div className="profileDetails lightpContainer flex">
+        <div className="profileDetails container flex">
           <img src={data.avatar_url} />
           <div className="profileDetailsHeader">
             <p className="link" ><a href={`https://github.com/${username}`}>{data.login}</a></p>

@@ -1,14 +1,20 @@
 import React from 'react'
-import Projects from './Projects'
+import MiniProjects from './MiniProjects'
 import Contact from './Contact'
 import Navbar from './Navbar'
+import WhatIKnow from './WhatIKnow'
+import Hero from './Hero'
+import Projects from './Projects'
 
 function Home() {
   return (
     <div className='home'>
       <div className="homeBody flex-v">
         <Navbar />
-        <div className="homeProjects"><Projects /></div>
+        <Hero />
+        <Projects />
+        <div className="homeProjects"><MiniProjects /></div>
+        <WhatIKnow />
         <Contact />
       </div>
     </div>

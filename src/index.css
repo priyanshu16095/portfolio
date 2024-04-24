@@ -6,6 +6,17 @@
 }
 :root {
   --borderRadius: 8px;
+
+  --lightContainersBackgroundColor: lightgray;
+  --lightBigContainerBackgroundColor: gray;
+  --lightContainerBackgroundColor: gray;
+  --lightInputBoxBorderColor: lightgray;
+  --lightRoundBorderColor: lightgray;
+
+  --darkAppBackgroundColor: #111111;
+  --darkAppBodyBackgroundColor: #000000;
+  --darkContainersBackgroundColor: #333333;
+  --darkInputboxBackgroundColor: #333333;
 }
 a {
   text-decoration: none;
@@ -21,10 +32,10 @@ p {
   font-size: 16px;
 }
 
+
 .app {
   height: 100vh;
   overflow: scroll;
-  background-color: #F6F5F2;
 }
 .app::-webkit-scrollbar {
   display: none;
@@ -34,7 +45,7 @@ p {
   max-width: 1200px;
   margin: auto;
   background-color: white;
-  box-shadow: 0px 0px 10px lightgray;
+  padding-bottom: 2rem;
 }
 
 /* ------------------------DARK-MODE------------------ */
@@ -45,7 +56,7 @@ p {
   background-color: #000000;
   box-shadow: none;
 }
-.container, .lightContainer, .lightpContainer, .bigContainer {
+.container, .lightContainer, .bigContainer {
   border: 2px solid #333333 !important;
   border-radius: 8px;
 }
@@ -56,6 +67,9 @@ p {
 .button {
   background-color: #ededed;
   color: rgba(0, 0, 0, 0.7);
+}
+.icon, .title, .name, .email {
+  color: white;
 } */
 
 /* FONTS------------------------------------------------- */
@@ -73,6 +87,7 @@ p {
 }
 .md-font {
   font-size: 1.1rem;
+  font-weight: 550;
 }
 .password {
   font-size: 1.2rem;
@@ -121,7 +136,7 @@ p {
 .center-both {
   display: grid;
   place-items: center;
-  min-height: 75vh;
+  min-height: 60vh;
 }
 /* --------------------------------------------------- */
 
@@ -131,7 +146,8 @@ p {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 550;
-  /* border: none; */
+  border-radius: 8px;
+  border: 1px solid lightgray;
 }
 /* ---------------------------------------------- */
 
@@ -141,8 +157,6 @@ p {
   align-items: center;
   border-radius: var(--borderRadius);
   border: 1px solid lightgray;
-  /* border: 2px solid #333333 !important; */
-  /* border-radius: 8px; */
 }
 .inputBox input {
   border: none;
@@ -155,16 +169,7 @@ p {
 .container {
   padding: 1rem;
   border-radius: var(--borderRadius);
-  border: 1px solid gray;
-  /* border: 2px solid #333333 !important; */
-  /* border-radius: 8px; */
-}
-.lightpContainer {
-  padding: 1rem;
-  border-radius: var(--borderRadius);
   border: 1px solid lightgray;
-  /* border: 2px solid #333333 !important; */
-  /* border-radius: 8px; */
 }
 .lightContainer {
   display: flex;
@@ -173,15 +178,11 @@ p {
   padding-left: 0.5rem;
   border-radius: var(--borderRadius);
   border: 1px solid lightgray;
-  /* border: 2px solid #333333 !important; */
-  /* border-radius: 8px; */
 }
 .bigContainer {
   padding: 2rem 1rem;
   border: 1px solid gray;
   border-radius: var(--borderRadius);
-  /* border: 2px solid #333333 !important; */
-  /* border-radius: 8px; */
 }
 /* --------------------------------------------------------------- */
 
@@ -197,9 +198,9 @@ p {
   cursor: pointer;
 }
 .label {
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 0.8rem;
   font-weight: 600;
-  background-color: rgba(211, 211, 211, 0.435);
   width: fit-content;
   border-radius: var(--borderRadius);
+  background-color: rgba(211, 211, 211, 0.435);
 }
