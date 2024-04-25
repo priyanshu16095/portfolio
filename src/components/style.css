@@ -6,10 +6,12 @@
 .contactContainer, .whatiknowContainer {
     border: none !important;
 }
+/* ---------------------------------------------- */
 
 .homeBody {
     gap: 1rem;
 }
+/* --------------------------------------------- */
 
 .mine_img {
     width: 3.5rem;
@@ -47,6 +49,7 @@
     gap: 2rem;
     padding: 1rem;
     border-radius: var(--borderRadius) 0 0 var(--borderRadius);
+    background-color: #f0f0f0;
 }
 .miniprojSidebarLinks {
     gap: 0.8rem;
@@ -68,7 +71,6 @@
   font-weight: 600;
   width: fit-content;
   border-radius: var(--borderRadius);
-  /* background-color: var(--darkColor); */
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -85,7 +87,6 @@
     align-items: start;
     padding: 1rem;
     gap: 1rem;
-    /* background-color: lightgray; */
     background-color: #f0f0f0;
 }
 .cardlabels {
