@@ -267,5 +267,24 @@ button:hover {
   .sidebarBody, .progressbarBody, .loadmoreBody, .paginationBody, .tabsBody, .passwordgenBody, .searchBody, .imagesliderBody, .accordionBody, .modalpageBody, .weatherBody, .scrollbody, .tictactoeBody, .reactpageBody, .javapageBody, .flowingnotesBody, .dadnotesBody, .quizBody, .todolistBody, .currencyBody {
     gap: 1rem;
   }
+  .options {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+  .dadnotesContainer, .searchContainer, .tabContainer, .gitfinderContainer, .loadmoreContainer, .quizContainer, .todolistContainer, .currencyContainer {
+    min-height: fit-content;
+  }
+  .profileDetails {
+    flex-direction: column;
+  }
+  .passCheckboxes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .sliderComp img {
+    width: 100%;
+  }
 }
 
