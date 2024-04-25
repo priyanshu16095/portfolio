@@ -47,7 +47,8 @@ p {
   max-width: 1200px;
   margin: auto;
   background-color: white;
-  padding-bottom: 2rem;
+  /* padding-bottom: 2rem; */
+  margin-bottom: 2rem;
 }
 
 /* ------------------------DARK-MODE------------------ */
@@ -245,6 +246,12 @@ button:hover {
   .email {
     color: rgba(255, 255, 255, 0.698);
   }
+  .sidebarBody, .progressbarBody, .loadmoreBody, .paginationBody, .tabsBody, .passwordgenBody, .searchBody, .imagesliderBody, .accordionBody, .modalpageBody, .weatherBody, .scrollbody, .tictactoeBody, .reactpageBody, .javapageBody, .flowingnotesBody, .dadnotesBody, .quizBody, .todolistBody, .currencyBody {
+    gap: 1rem;
+  }
+  .dadnotesContainer, .searchContainer, .tabContainer, .gitfinderContainer, .loadmoreContainer, .quizContainer, .todolistContainer, .currencyContainer {
+    min-height: 15rem;
+  }
   .navbarRight {
     display: none;
   }
@@ -283,16 +290,10 @@ button:hover {
   .miniprojSidebar {
     gap: 1rem;
   }
-  .sidebarBody, .progressbarBody, .loadmoreBody, .paginationBody, .tabsBody, .passwordgenBody, .searchBody, .imagesliderBody, .accordionBody, .modalpageBody, .weatherBody, .scrollbody, .tictactoeBody, .reactpageBody, .javapageBody, .flowingnotesBody, .dadnotesBody, .quizBody, .todolistBody, .currencyBody {
-    gap: 1rem;
-  }
   .options {
     display: flex;
     flex-direction: column;
     width: fit-content;
-  }
-  .dadnotesContainer, .searchContainer, .tabContainer, .gitfinderContainer, .loadmoreContainer, .quizContainer, .todolistContainer, .currencyContainer {
-    min-height: 15rem;
   }
   .profileDetails {
     flex-direction: column;
@@ -304,6 +305,12 @@ button:hover {
   }
   .sliderComp img {
     width: 100%;
+  }
+  .sliderComp .MuiSvgIcon-root {
+    font-size: 1.3rem;
+  }
+  .currentImageCircle .MuiSvgIcon-root {
+    font-size: .8rem !important;
   }
   .modal {
     padding: 0rem 1rem;
