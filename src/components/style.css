@@ -68,8 +68,9 @@
   font-weight: 600;
   width: fit-content;
   border-radius: var(--borderRadius);
-  background-color: var(--darkColor);
+  /* background-color: var(--darkColor); */
   color: white;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .cards {
     gap: 1rem;
@@ -84,7 +85,8 @@
     align-items: start;
     padding: 1rem;
     gap: 1rem;
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    background-color: #f0f0f0;
 }
 .cardlabels {
     gap: 0.5rem;
