@@ -37,6 +37,7 @@ p {
 .app {
   height: 100vh;
   overflow: scroll;
+  overflow-x: hidden;
 }
 .app::-webkit-scrollbar {
   display: none;
@@ -219,4 +220,31 @@ button:hover {
   font-weight: 600;
   width: fit-content;
   border-radius: var(--borderRadius);
+}
+
+@media all and (max-width: 705px) {
+  .navbarRight {
+    display: none;
+  }
+  .heroContainer {
+    width: 90vw;
+  }
+  .heroBody {
+    min-height: 30vh;
+  }
+  .hi, .build {
+    font-size: 1.3rem;
+  }
+  .like {
+    font-size: 0.7rem;
+  }
+  .location {
+    font-size: 0.8rem;
+  }
+  .locationIcon {
+    font-size: 1rem !important;
+  }
+  .displayAlways {
+    display: block !important;
+  }
 }

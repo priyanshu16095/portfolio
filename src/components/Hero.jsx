@@ -8,11 +8,11 @@ function Hero() {
         <div className="heroBody center-both">
             <div className="heroContainer flex-v">
             <div className='about flex-v'>
-            <h1>Hi, I'm Priyanshu</h1>
+            <h1 className='hi'>Hi, I'm Priyanshu</h1>
             <h1 className='build'>I build things for the web</h1>
             </div>
             <div className="flex">
-                <LocationOnIcon />
+                <LocationOnIcon className='locationIcon' />
             <p className='location'>Greater Noida, India</p>
             </div>
             <p className='like'>I like to craft solid and scalable frontend products with great user experiences.    </p>
