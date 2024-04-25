@@ -229,6 +229,9 @@ button:hover {
   .hero {
     display: none;
   }
+  .homeBody {
+    gap: 2rem;
+  }
   .contactContainer {
     width: 100%;
   }
@@ -251,6 +254,18 @@ button:hover {
   .miniprojSidebarLinks {
     display: grid;
     grid-template-columns: auto auto;
+  }
+  .inputBox {
+    width: 100%;
+  }
+  .inputBox input {
+    width: 50%;
+  }
+  .miniprojSidebar {
+    gap: 1rem;
+  }
+  .sidebarBody, .progressbarBody, .loadmoreBody, .paginationBody, .tabsBody, .passwordgenBody, .searchBody, .imagesliderBody, .accordionBody, .modalpageBody, .weatherBody, .scrollbody, .tictactoeBody, .reactpageBody, .javapageBody, .flowingnotesBody, .dadnotesBody, .quizBody, .todolistBody, .currencyBody {
+    gap: 1rem;
   }
 }
 
