@@ -8,8 +8,9 @@
 }
 
 .homeBody {
-    gap: 2rem;
+    gap: 1rem;
 }
+
 .mine_img {
     width: 3.5rem;
     border-radius: 50%;
@@ -39,19 +40,26 @@
 
 .miniprojectsContainer {
     display: flex;
+    padding: 0rem !important;
 }
 .miniprojSidebar {
     flex: 0.2;
     gap: 2rem;
+    padding: 1rem;
+    border-radius: var(--borderRadius) 0 0 var(--borderRadius);
 }
 .miniprojSidebarLinks {
     gap: 0.8rem;
 }
 .miniprojDisplay {
     flex: 0.8;
+    padding: 1rem;
 }
 /* -------------------------------------------------- */
 
+.whatiknowBody {
+    padding: 1rem 0rem;
+}
 .whatiknowContainer {
     gap: 1rem;
 }
@@ -90,7 +98,7 @@
 /* -------------------------------------------------------- */
 
 .hero {
-    min-height: 60vh;
+    min-height: 70vh;
     backdrop-filter: blur(5px);
 }
 .heroContainer {
@@ -130,6 +138,3 @@
 } */
 
 
-.projectsBody {
-    padding: 1rem;
-}

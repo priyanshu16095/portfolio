@@ -17,7 +17,7 @@ function ScrollToBottom() {
         <div className='scroll' ref={topRef}>
             <div className="scrollbody flex-v">
                 <p className="title">Scroll To Bottom</p>
-                <div className="scrollbodyContainer container flex-v">
+                <div className="scrollbodyContainer bigContainer flex-v">
                     <p className="md-font">Items</p>
                     <div className="lightContainer flex-h">
                         <p className='md-font'>Top-Section</p>

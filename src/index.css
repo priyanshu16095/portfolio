@@ -183,6 +183,11 @@ button:hover {
   border-radius: var(--borderRadius);
   border: 1px solid lightgray;
 }
+.lightpContainer {
+  border-radius: var(--borderRadius);
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+}
 .bigContainer {
   padding: 2rem 1rem;
   border: 1px solid gray;

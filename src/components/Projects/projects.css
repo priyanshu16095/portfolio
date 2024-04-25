@@ -3,11 +3,11 @@
     --borderRadius: 8px;
 }
 
-.sidebarBody, .progressbarBody, .loadmoreBody, .paginationBody, .tabsBody, .passwordgenBody, .searchBody, .imagesliderBody, .accordionBody, .modalpageBody, .weatherBody, .scrollbody, .tictactoeBody, .reactpageBody, .javapageBody, .flowingnotesBody, .dadnotesBody {
+.sidebarBody, .progressbarBody, .loadmoreBody, .paginationBody, .tabsBody, .passwordgenBody, .searchBody, .imagesliderBody, .accordionBody, .modalpageBody, .weatherBody, .scrollbody, .tictactoeBody, .reactpageBody, .javapageBody, .flowingnotesBody, .dadnotesBody, .quizBody, .todolistBody, .currencyBody {
     gap: 2rem;
 }
 
-.dadnotesContainer, .searchContainer, .tabContainer, .gitfinderContainer, .loadmoreContainer {
+.dadnotesContainer, .searchContainer, .tabContainer, .gitfinderContainer, .loadmoreContainer, .quizContainer, .todolistContainer, .currencyContainer {
     min-height: 25rem;
 }
 
@@ -233,5 +233,62 @@
     gap: 1rem;
 }
 .stbitems {
+    gap: 0.5rem;
+}
+
+.todolistContainer {
+    gap: 1rem;
+}
+.todos {
+    gap: 1rem;
+    padding-left: 0.5rem;
+}
+.todo {
+    gap: 1rem;
+    max-width: 16rem;
+}
+.todo .button {
+    padding: 0.2rem 0.5rem;
+}
+
+.quizContainer {
+    gap: 1rem;
+}
+.question {
+    gap: 0.5rem;
+}
+.options {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 30rem;
+    gap: 0.5rem;
+}
+.option {
+    padding: 0.2rem 0.5rem !important;
+    font-size: 1rem !important;
+    width: 100% !important;
+}
+.question .md-font, .result .md-font {
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+.result {
+    gap: 0.5rem;
+}
+.questionsInfo {
+    margin-top: 1rem;
+    gap: 0.25rem;
+}
+.questionsInfo p[data-correct="true"] {
+    color: green;
+}
+.questionsInfo p[data-correct="false"] {
+    color: red;
+}
+
+.currencyContainer {
+    gap: 1rem;
+}
+.from, .to, .amount {
     gap: 0.5rem;
 }
