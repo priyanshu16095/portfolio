@@ -223,8 +223,20 @@ button:hover {
 }
 
 @media all and (max-width: 705px) {
-  .homeBody {
-    /* gap: 2rem; */
+  .title {
+    font-size: 1.3rem;
+  }
+  .link {
+    font-size: 1rem;
+  }
+  .button {
+    font-size: 0.9rem;
+  }
+  .inputBox input {
+    font-size: 0.9rem;
+  }
+  .contactInput {
+    font-size: 1rem;
   }
   .navbarBody {
     color: white;
@@ -280,7 +292,7 @@ button:hover {
     width: fit-content;
   }
   .dadnotesContainer, .searchContainer, .tabContainer, .gitfinderContainer, .loadmoreContainer, .quizContainer, .todolistContainer, .currencyContainer {
-    min-height: fit-content;
+    min-height: 15rem;
   }
   .profileDetails {
     flex-direction: column;
