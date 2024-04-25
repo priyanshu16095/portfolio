@@ -244,5 +244,13 @@ button:hover {
     align-items: start;
     width: 100%;
   }
+  .miniprojectsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .miniprojSidebarLinks {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
 
