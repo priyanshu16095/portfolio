@@ -6,6 +6,7 @@
 }
 :root {
   --borderRadius: 8px;
+  --blueColor: #0071e3;
 
   --lightContainersBackgroundColor: lightgray;
   --lightBigContainerBackgroundColor: gray;
@@ -83,7 +84,7 @@ p {
   cursor: pointer;
 }
 .link:hover {
-  color: purple;
+  color: var(--blueColor);
 }
 .md-font {
   font-size: 1.1rem;
@@ -147,11 +148,13 @@ p {
   font-size: 1rem;
   font-weight: 550;
   border-radius: 8px;
-  border: 1px solid lightgray;
+  border: 1px solid rgba(211, 211, 211, 0.597);
+  background-color: var(--blueColor);
+  color: white;
   transition: all 0.1s;
 }
 button:hover {
-  background-color: rgba(128, 128, 128, 0.3);
+  background-color: #0071e3dd;
 }
 /* ---------------------------------------------- */
 

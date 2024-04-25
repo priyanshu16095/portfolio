@@ -15,12 +15,12 @@ import TodoList from './TodoList/TodoList'
 import CurrencyConverter from './CurrencyConverter/CurrencyConverter'
 
 const data = [
-    {name: 'Password Generator', content: <PasswordGenerator />},
+    {name: 'Modal Pop-Up', content: <ModalPopUp />},
     {name: 'Accordion', content: <Accordion />},
     {name: 'Drag And Drop Notes', content: <DragAndDropNotes />},
+    {name: 'Password Generator', content: <PasswordGenerator />},
     {name: 'Quiz Application', content: <Quiz />},
     {name: 'Currency Converter', content: <CurrencyConverter />},
-    {name: 'Modal Pop-Up', content: <ModalPopUp />},
     {name: 'Github Profile Finder', content: <GithubProfileFinder />},
     {name: 'Image Slider', content: <ImageSlider />},
     {name: 'Progress Bar', content: <ProgressBarPage />},
