@@ -15,7 +15,6 @@ function Contact() {
               <input type="text" className="contactInput" placeholder='Name' />
               <input type="text" className="contactInput" placeholder='Email' />
             </div>
-            {/* <input type="text" className="messageInput contactInput" placeholder='Message' /> */}
             <textarea placeholder='Message' cols="30" rows="5" className='messageInput contactInput' />
             <div className="flex-e"><button className="formButton button">Send</button></div>
           </div>

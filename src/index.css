@@ -226,25 +226,23 @@ button:hover {
   .navbarRight {
     display: none;
   }
-  .heroContainer {
-    width: 90vw;
+  .hero {
+    display: none;
   }
-  .heroBody {
-    min-height: 30vh;
+  .contactContainer {
+    width: 100%;
   }
-  .hi, .build {
-    font-size: 1.3rem;
+  .contactInput {
+    width: 100%;
   }
-  .like {
-    font-size: 0.7rem;
+  .formNameEmail {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
   }
-  .location {
-    font-size: 0.8rem;
-  }
-  .locationIcon {
-    font-size: 1rem !important;
-  }
-  .displayAlways {
-    display: block !important;
+  .form {
+    align-items: start;
+    width: 100%;
   }
 }
+
