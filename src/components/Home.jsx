@@ -14,7 +14,7 @@ function Home() {
         <Hero />
         <Projects />
         <div className="homeProjects"><MiniProjects /></div>
-        <WhatIKnow />
+        {/* <WhatIKnow /> */}
         <Contact />
       </div>
     </div>

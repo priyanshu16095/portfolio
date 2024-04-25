@@ -123,23 +123,26 @@
     font-size: 1.1rem;
 }
 
-/* .miniprojectsBody {
-    background-color: #000000;
+.contactContainer {
+    gap: 1rem;
+    width: fit-content;
 }
-.miniprojectsContainer {
-    border-radius: 8px !important;
-    border: 2px solid #333333 !important;
-    color: #c2c2c2;
+.form {
+    gap: 0.5rem;
+    width: 40rem;
 }
-.miniprojSidebar {
-    background-color: #111111;
-}
-.miniprojSidebar {
-    background-color: #111111;
+.contactInput {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
     border-radius: 8px;
+    border: 1px solid lightgray;
 }
-.navbarContainer {
-    border: none !important;
-} */
-
-
+.formNameEmail {
+    gap: 1rem;
+}
+.formButton {
+    width: 100% !important;
+    height: 2.8rem;
+}
