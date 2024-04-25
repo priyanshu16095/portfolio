@@ -223,14 +223,21 @@ button:hover {
 }
 
 @media all and (max-width: 705px) {
+  .homeBody {
+    /* gap: 2rem; */
+  }
+  .navbarBody {
+    color: white;
+    background-color: black;
+  }
+  .email {
+    color: rgba(255, 255, 255, 0.698);
+  }
   .navbarRight {
     display: none;
   }
   .hero {
     display: none;
-  }
-  .homeBody {
-    gap: 2rem;
   }
   .contactContainer {
     width: 100%;
@@ -285,6 +292,15 @@ button:hover {
   }
   .sliderComp img {
     width: 100%;
+  }
+  .modal {
+    padding: 0rem 1rem;
+  }
+  .modalBody {
+    width: 100%;
+  }
+  .miniprojects {
+    margin-bottom: 1rem;
   }
 }
 
