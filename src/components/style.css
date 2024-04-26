@@ -185,3 +185,9 @@
     height: 2.8rem;
     margin-top: 0.5rem;
 }
+
+.footerContainer {
+    justify-content: center;
+    gap: .25rem;
+    align-items: center;
+}

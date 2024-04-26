@@ -5,6 +5,7 @@ import Navbar from './Navbar'
 import WhatIKnow from './WhatIKnow'
 import Hero from './Hero'
 import Projects from './Projects'
+import Footer from './Footer'
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
         <div className="homeProjects"><MiniProjects /></div>
         {/* <WhatIKnow /> */}
         <Contact />
+        <Footer />
       </div>
     </div>
   )
