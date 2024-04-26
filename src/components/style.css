@@ -1,11 +1,12 @@
 :root {
+    --bordreRadius: 8px;
     --grayColor: #dee2e6;
     --darkColor: #31363F;
     --blueColor: #0071e3;
     --backgroundColor: #f5f5f7;
 }
 
-.contactContainer, .whatiknowContainer {
+.contactContainer, .whatiknowContainer, .projectsContainer {
     border: none !important;
 }
 /* ---------------------------------------------- */
@@ -184,6 +185,27 @@
     width: 100% !important;
     height: 2.8rem;
     margin-top: 0.5rem;
+}
+
+.projectsContainer {
+    gap: 1rem;
+}
+.projectsCards {
+    gap: 1rem;
+}
+.aboutProject {
+    gap: .5rem;
+}
+.projectCard {
+    width: fit-content;
+    /* height: fit-content; */
+    height: 15rem;
+    border: 1px solid lightgray;
+    padding: 1rem;
+    border-radius: var(--borderRadius);
+}
+.slick-slide > div {
+    margin: 0 .5rem;
 }
 
 .footerContainer {

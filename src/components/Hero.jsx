@@ -25,7 +25,7 @@ function Hero() {
           </div>
           <div className="flex">
             <LocationOnIcon className='locationIcon' />
-            <p className='location'>Planet Earth</p>
+            <p className='location'>Full Stack Development and Devops</p>
           </div>
           <p className='like'>I like to craft solid and scalable frontend products with great user experiences.    </p>
           <div className="skillsMarquee flex">
