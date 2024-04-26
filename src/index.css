@@ -39,7 +39,7 @@ p {
   height: 100vh;
   overflow: scroll;
   overflow-x: hidden;
-  max-width: 85vw;
+  max-width: 1200px;
   margin: auto;
 }
 .app::-webkit-scrollbar {
