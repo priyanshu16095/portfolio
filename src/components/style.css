@@ -11,12 +11,16 @@
 /* ---------------------------------------------- */
 
 .homeBody {
-    gap: 1rem;
+    gap: 2rem;
 }
 /* --------------------------------------------- */
 
 .mine_img {
     width: 3.5rem;
+    border-radius: 50%;
+}
+.mine_img_res {
+    width: 15rem;
     border-radius: 50%;
 }
 .navbarBody {
@@ -102,9 +106,11 @@
 
 /* -------------------------------------------------------- */
 
-.hero {
-    min-height: 70vh;
-    backdrop-filter: blur(5px);
+.heroContainer {
+    padding: 10rem 0rem;
+}
+.responsiveHero {
+    display: none !important;
 }
 .heroContainer {
     gap: 0.8rem;
@@ -123,7 +129,25 @@
     font-size: 1.1rem;
 }
 
-.contactContainer {
+.contactBody {
+    display: flex;
+    gap: 1rem;
+}
+.contactwithme {
+    border: none !important;
+    gap: 1rem;
+}
+.contactwithmeContianer {
+    gap: .5rem;
+}
+.icons {
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.locationDiv, .mailDiv {
+    gap: 1rem;
+}
+.getintouch {
     gap: 1rem;
     width: fit-content;
 }
@@ -145,4 +169,5 @@
 .formButton {
     width: 100% !important;
     height: 2.8rem;
+    margin-top: 0.5rem;
 }

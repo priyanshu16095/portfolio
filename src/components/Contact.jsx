@@ -1,22 +1,47 @@
 import React from 'react'
 import './style.css'
+import EmailIcon from '@mui/icons-material/Email';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import XIcon from '@mui/icons-material/X';
 
 function Contact() {
   return (
     <div className='contact'>
       <div className="contactBody">
-        <div className="contactContainer flex-v container">
-          <div className="contactHeader flex-h">
-            <p className="title">Get In Touch</p>
-            <p className='key'>React Hook Form</p>
-          </div>
-          <div className="form flex-v">
-            <div className="formNameEmail flex">
-              <input type="text" className="contactInput" placeholder='Name' />
-              <input type="text" className="contactInput" placeholder='Email' />
+        <div className="contactContainer">
+          <div className="getintouch flex-v container">
+            <div className="contactHeader flex-h">
+              <p className="title">Get In Touch</p>
+              <p className='key'>React Hook Form</p>
             </div>
-            <textarea placeholder='Message' cols="30" rows="5" className='messageInput contactInput' />
-            <div className="flex-e"><button className="formButton button">Send</button></div>
+            <div className="form flex-v">
+              <div className="formNameEmail flex">
+                <input type="text" className="contactInput" placeholder='Name' />
+                <input type="text" className="contactInput" placeholder='Email' />
+              </div>
+              <textarea placeholder='Message' cols="30" rows="5" className='messageInput contactInput' />
+              <div className="formButtonDiv flex-e"><button className="formButton button">Send Message</button></div>
+            </div>
+          </div>
+        </div>
+        <div className="contactwithme container flex-v">
+          <p className="title">Contact With Me</p>
+          <div className="contactwithmeContianer flex-v">
+            <div className="flex locationDiv">
+              <LocationOnIcon className="icon" />
+              <p className="location">Planet Earth</p>
+            </div>
+            <div className="flex mailDiv">
+              <EmailIcon className='icon' />
+              <p className="location">priyanshu16095@gmail.com</p>
+            </div>
+            <div className="icons flex">
+              <div className="round"><GitHubIcon /></div>
+              <div className="round"><LinkedInIcon /></div>
+              <div className="round"><XIcon /> </div>
+            </div>
           </div>
         </div>
       </div>

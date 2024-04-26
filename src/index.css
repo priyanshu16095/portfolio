@@ -39,16 +39,17 @@ p {
   height: 100vh;
   overflow: scroll;
   overflow-x: hidden;
+  max-width: 1200px;
+  margin: auto;
 }
 .app::-webkit-scrollbar {
   display: none;
 }
 .appBody {
   min-height: 100%;
-  max-width: 1200px;
+  max-width: 100%;
   margin: auto;
   background-color: white;
-  /* padding-bottom: 2rem; */
   margin-bottom: 2rem;
 }
 
@@ -226,12 +227,15 @@ button:hover {
 
 @media all and (max-width: 705px) {
   .title {
+    font-weight: 500;
     font-size: 1.3rem;
   }
   .link {
+    font-weight: 400;
     font-size: 1rem;
   }
   .button {
+    font-weight: 500;
     font-size: 0.9rem;
   }
   .inputBox input {
@@ -239,13 +243,6 @@ button:hover {
   }
   .contactInput {
     font-size: 1rem;
-  }
-  .navbarBody {
-    color: white;
-    background-color: black;
-  }
-  .email {
-    color: rgba(255, 255, 255, 0.698);
   }
   .sidebarBody, .progressbarBody, .loadmoreBody, .paginationBody, .tabsBody, .passwordgenBody, .searchBody, .imagesliderBody, .accordionBody, .modalpageBody, .weatherBody, .scrollbody, .tictactoeBody, .reactpageBody, .javapageBody, .flowingnotesBody, .dadnotesBody, .quizBody, .todolistBody, .currencyBody {
     gap: 1rem;
@@ -264,27 +261,6 @@ button:hover {
     background-color: white;
   }
   /* --------------------------- */
-  .navbarRight {
-    display: none;
-  }
-  .hero {
-    display: none;
-  }
-  .contactContainer {
-    width: 100%;
-  }
-  .contactInput {
-    width: 100%;
-  }
-  .formNameEmail {
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
-  }
-  .form {
-    align-items: start;
-    width: 100%;
-  }
   .miniprojectsContainer {
     display: flex;
     flex-direction: column;
@@ -332,6 +308,78 @@ button:hover {
   }
   .miniprojects {
     margin-bottom: 1rem;
+  }
+
+  .navbarBody {
+    padding: .5rem !important;
+  }
+  .navbarRight {
+    display: none;
+  }
+  .navbarLeft .mine_img {
+    display: none;
+  }
+  .email {
+    display: none;
+  }
+
+  .name {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .responsiveHero {
+    display: block !important;
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    gap: .5rem;
+    padding: 5rem 0rem;
+  }
+  .fullstack {
+    margin-top: 1rem;
+  }
+  .responsiveHero .build, .hi {
+    font-size: 1.5rem;
+  }
+  .responsiveHero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .responsiveHero .like {
+    font-size: .8rem;
+  }
+
+
+  .contactBody {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .getintouch {
+    width: 100%;
+  }
+  .formButtonDiv {
+    width: 100%;
+  }
+  .formButton {
+    width: 100% !important;
+  }
+  .contactInput {
+    width: 100%;
+  }
+  .formNameEmail {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .form {
+    align-items: start;
+    width: 100%;
+  }
+
+  .heroContainer {
+    display: none;
   }
 }
 
