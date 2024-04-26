@@ -17,10 +17,9 @@ import CurrencyConverter from './CurrencyConverter/CurrencyConverter'
 const data = [
     {name: 'Modal Pop-Up', content: <ModalPopUp />},
     {name: 'Accordion', content: <Accordion />},
-    {name: 'Drag And Drop Notes', content: <DragAndDropNotes />},
     {name: 'Password Generator', content: <PasswordGenerator />},
-    {name: 'Quiz Application', content: <Quiz />},
     {name: 'Currency Converter', content: <CurrencyConverter />},
+    {name: 'Quiz Application', content: <Quiz />},
     {name: 'Github Profile Finder', content: <GithubProfileFinder />},
     {name: 'Image Slider', content: <ImageSlider />},
     {name: 'Progress Bar', content: <ProgressBarPage />},
@@ -29,6 +28,7 @@ const data = [
     {name: 'Search Auto Complete', content: <SearchAutoComplete />},
     {name: 'Load More', content: <LoadMore />},
     {name: 'Todo List', content: <TodoList />},
+    {name: 'Drag And Drop Notes', content: <DragAndDropNotes />},
 ]
 
 export default data
