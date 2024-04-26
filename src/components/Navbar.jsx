@@ -23,11 +23,11 @@ function Navbar() {
             </div>
           </div>
           <div className="navbarRight flex">
-            <button className="button">Download CV</button>
-            <a href="https://www.linkedin.com/in/priyanshu-gupta-960136303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' className='round'><LinkedInIcon className='icon' /></a>
-            <a href="https://github.com/priyanshu16095" target='_blank' className='round'><GitHubIcon /></a>
-            <div className="round" onClick={() => setIsDarkMode(!isDarkMode)}>{isDarkMode ? <DarkModeIcon className='icon' /> : <LightModeIcon className='icon' />}</div>
-            <div className="round" onClick={() => setIsOpen(!isOpen)}>{isOpen ? <CloseIcon className='icon' /> : <MenuIcon className='icon alwaysIcon' />}</div>
+            <button className="button displayNone">Download CV</button>
+            <a href="https://www.linkedin.com/in/priyanshu-gupta-960136303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' className='round displayNone'><LinkedInIcon className='icon' /></a>
+            <a href="https://github.com/priyanshu16095" target='_blank' className='round displayNone'><GitHubIcon /></a>
+            <div className="round displayNone" onClick={() => setIsDarkMode(!isDarkMode)}>{isDarkMode ? <DarkModeIcon className='icon displayNone' /> : <LightModeIcon className='icon displayNone' />}</div>
+            <div className="round" onClick={() => setIsOpen(!isOpen)}>{isOpen ? <CloseIcon className='icon' /> : <MenuIcon className='icon' />}</div>
           </div>
         </div>
       </div>

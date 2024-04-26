@@ -313,7 +313,7 @@ button:hover {
   .navbarBody {
     padding: .5rem !important;
   }
-  .navbarRight {
+  .navbarRight .displayNone {
     display: none;
   }
   .navbarLeft .mine_img {
@@ -322,11 +322,11 @@ button:hover {
   .email {
     display: none;
   }
-
   .name {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 550;
   }
+
   .responsiveHero {
     display: block !important;
     text-align: center;
