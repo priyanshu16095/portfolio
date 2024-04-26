@@ -108,14 +108,12 @@
 /* -------------------------------------------------------- */
 
 .heroContainer {
-    padding: 10rem 0rem;
+    padding: 8rem 0rem;
+    gap: .5rem;
+    align-items: center;
 }
 .responsiveHero {
     display: none !important;
-}
-.heroContainer {
-    gap: 0.8rem;
-    align-items: center;
 }
 .about {
     align-items: center;
@@ -128,6 +126,21 @@
 }
 .like {
     font-size: 1.1rem;
+}
+.skillsMarquee, .skillsMarqueeRes {
+    margin-top: 2rem;
+}
+.skillsMarquee {
+    gap: 1rem;
+}
+.skillsMarqueeRes {
+    margin: auto;
+    margin-top: 2rem;
+    width: 100%;
+}
+.skillsIcon {
+    font-size: 2.5rem;
+    margin: 0 .5rem;
 }
 
 .contactBody {
