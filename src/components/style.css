@@ -4,6 +4,7 @@
     --darkColor: #31363F;
     --blueColor: #0071e3;
     --backgroundColor: #f5f5f7;
+    --animationSpeed: 3s;
 }
 
 .contactContainer, .whatiknowContainer, .projectsContainer {
@@ -118,6 +119,50 @@
 }
 .about {
     align-items: center;
+}
+
+
+/* .hi {
+    position: relative;
+}
+.hi::before, .hi::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.hi::before {
+    background-color: white;
+    animation: typewriter var(--animationSpeed) steps(17) 1s forwards;
+}
+.hi::after {
+    width: 0.25rem;
+    background-color: black;
+    animation: typewriter var(--animationSpeed) steps(17) 1s forwards,
+     blink 750ms steps(18) infinite;
+} */
+.build {
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease forwards;
+}
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+@keyframes blink {
+    to {
+        background-color: transparent;
+    }
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .build {
     color: rgba(0, 0, 0, 0.7);
