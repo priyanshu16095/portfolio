@@ -316,6 +316,9 @@ button:hover {
   .navbarRight .displayNone {
     display: none;
   }
+  .navbarRight .round {
+    border: none;
+  }
   .navbarLeft .mine_img {
     display: none;
   }
