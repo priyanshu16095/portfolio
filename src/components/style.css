@@ -12,7 +12,7 @@
 /* ---------------------------------------------- */
 
 .homeBody {
-    gap: 2rem;
+    gap: 4rem;
 }
 /* --------------------------------------------- */
 
@@ -109,7 +109,7 @@
 /* -------------------------------------------------------- */
 
 .heroContainer {
-    padding: 8rem 0rem;
+    padding: 6rem 0rem;
     gap: .5rem;
     align-items: center;
 }
@@ -196,9 +196,11 @@
 .aboutProject {
     gap: .5rem;
 }
+.aboutProject .button {
+    width: 100%;
+}
 .projectCard {
     width: fit-content;
-    /* height: fit-content; */
     height: 15rem;
     border: 1px solid lightgray;
     padding: 1rem;

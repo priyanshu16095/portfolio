@@ -39,7 +39,7 @@ function Projects() {
     slidesToScroll: 1,
     swipeToSlide: true,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 3000,
     pauseOnHover: true,
     responsive: [
       {
