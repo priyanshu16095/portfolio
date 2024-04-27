@@ -7,7 +7,7 @@
     --animationSpeed: 3s;
 }
 
-.contactContainer, .whatiknowContainer, .projectsContainer {
+.contactContainer, .whatiknowContainer, .projectsContainer, .heroContainer {
     border: none !important;
 }
 /* ---------------------------------------------- */
@@ -109,18 +109,17 @@
 
 /* -------------------------------------------------------- */
 
+.responsiveHero {
+    display: none !important;
+}
 .heroContainer {
     padding: 3rem 0rem;
     gap: .5rem;
     align-items: center;
-}
-.responsiveHero {
-    display: none !important;
-}
+} 
 .about {
     align-items: center;
 }
-
 
 /* .hi {
     position: relative;

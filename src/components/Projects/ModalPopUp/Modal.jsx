@@ -8,7 +8,7 @@ function Modal({ onClose }) {
 
       <div className="modalBody flex-v">
         <div className="modalHeader flex-h">
-          <h3>Modal Pop-up</h3>
+          <p className='md-font'>Modal Pop-up</p>
           <button onClick={onClose}><IoCloseSharp /></button>
         </div>
         <div className="modalContent">

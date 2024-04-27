@@ -5,9 +5,9 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 :root {
-  --borderRadius: 8px;
+  /* --borderRadius: 8px;
   --blueColor: #0071e3;
-  --backgroundColor: #f5f5f7; 
+  --appleColor: #f5f5f7; 
 
   --lightContainersBackgroundColor: lightgray;
   --lightBigContainerBackgroundColor: gray;
@@ -19,7 +19,118 @@
   --darkAppBodyBackgroundColor: #000000;
   --darkContainersBackgroundColor: #333333;
   --darkInputboxBackgroundColor: #333333;
+
+  --dark5: #2f3e46;
+  --dark4: #354f52;
+  --dark3: #52796f;
+  --dark2: #84a98c;
+  --dark1: #cad2c5; */
 }
+
+[data-theme="dark"] {
+  --bodyBackgrounColor: #000000;
+  --appbodyColor: #000000;
+  --navbarBackgroundColor: #111111;
+  --projSidebarBackgroundColor: #111111;
+
+  --graycontainerBorderColor: #333333;
+  --lightContainerBorderColor: #333333;
+
+  --keyFontColor: rgba(255, 255, 255, 0.7);
+  --linkFontColor: white;
+  --titleFontColor: white;
+  --pFontColor: white;
+
+  --inputBackgroundColor: #333333;
+  --inputBoxBorderColor: #333333;
+
+  --color7: rgba(255, 255, 255, 0.7);
+
+  --iconFontColor: white;
+  --roundBorderColor: #333333;
+
+  --hiFontColor: white;
+
+  --modalBackgrounColor: #111111;
+} 
+[data-theme="light"] {
+  --bodyBackgroundColor: white;
+  --appbodyColor: white;
+  --navbarBackgroundColor: white;
+  --projSidebarBackgroundColor: #f5f5f7;
+
+  --graycontainerBorderColor: gray;
+  --lightContainerBorderColor: lightgray;
+  
+  --keyFontColor: rgba(0, 0, 0, 0.7);
+  --linkFontColor: black;
+  --titleFontColor: black;
+  --pFontColor: black;
+  
+  --inputBackgroundColor: white;
+  --inputBoxBorderColor: lightgray;
+  
+  --color7: rgba(0, 0, 0, 0.7);
+  
+  --iconFontColor: black;
+  --inputboxBorderColor: lightgray;
+  --roundBorderColor: lightgray;
+  
+  --hiFontColor: black;
+
+  --modalBackgrounColor: white;
+}
+
+.modalBody {
+  background-color: var(--modalBackgrounColor);
+}
+.hi {
+  color: var(--hiFontColor) !important;
+}
+.navbar {
+  background-color: var(--navbarBackgroundColor);
+}
+p {
+  color: var(--pFontColor );
+}
+.key {
+  color: var(--keyFontColor);
+}
+.email {
+  color: var(--color7);
+}
+.hero {
+  color: var(--color7);
+}
+.build {
+  color: var(--color7);
+}
+.contact {
+  color: var(--color7);
+}
+.link {
+  color: var(--linkFontColor);
+}
+.hi {
+  color: black;
+}
+.icon {
+  color: var(--iconFontColor);
+}
+.title {
+  color: var(--titleFontColor);
+}
+.miniprojSidebar {
+  background-color: var(--projSidebarBackgroundColor);
+}
+ input {
+  border-color: var(--inputBoxBorderColor);
+}
+
+input, textarea {
+  background-color: var(--inputBackgroundColor);
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -34,13 +145,16 @@ p {
   font-size: 16px;
 }
 
-
+body {
+  background-color: var(--bodyBackgrounColor);
+}
 .app {
   height: 100vh;
   overflow: scroll;
   overflow-x: hidden;
   max-width: 1200px;
   margin: auto;
+  transition: all 2s;
 }
 .app::-webkit-scrollbar {
   display: none;
@@ -49,33 +163,7 @@ p {
   min-height: 100%;
   max-width: 100%;
   margin: auto;
-  background-color: white;
-  /* margin-bottom: 2rem; */
 }
-
-/* ------------------------DARK-MODE------------------ */
-/* .app {
-  background-color: #111111;
-}
-.appBody {
-  background-color: #000000;
-  box-shadow: none;
-}
-.container, .lightContainer, .bigContainer {
-  border: 2px solid #333333 !important;
-  border-radius: 8px;
-}
-.inputBox {
-  border: 2px solid #333333 !important;
-  border-radius: 8px;
-}
-.button {
-  background-color: #ededed;
-  color: rgba(0, 0, 0, 0.7);
-}
-.icon, .title, .name, .email {
-  color: white;
-} */
 
 /* FONTS------------------------------------------------- */
 .title {
@@ -94,18 +182,13 @@ p {
   font-size: 1.1rem;
   font-weight: 550;
 }
-.password {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: rgb(46, 46, 46);
-}
 .error {
   color: red;
   text-align: start;
 }
 .key {
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--keyFontColor);
 }
 /* -------------------------------------------------------- */
 
@@ -152,7 +235,7 @@ p {
   font-size: 1rem;
   font-weight: 550;
   border-radius: 8px;
-  border: 1px solid rgba(211, 211, 211, 0.597);
+  border: 1px solid rgba(211, 211, 211, 0.1);
   background-color: var(--blueColor);
   color: white;
   transition: all 0.1s;
@@ -167,7 +250,7 @@ button:hover {
   display: flex;
   align-items: center;
   border-radius: var(--borderRadius);
-  border: 1px solid lightgray;
+  border: 1px solid var(--inputBoxBorderColor);
 }
 .inputBox input {
   border: none;
@@ -180,7 +263,7 @@ button:hover {
 .container {
   padding: 1rem;
   border-radius: var(--borderRadius);
-  border: 1px solid lightgray;
+  border: 1px solid var(--lightContainerBorderColor);
 }
 .lightContainer {
   display: flex;
@@ -188,16 +271,16 @@ button:hover {
   justify-content: space-between;
   padding-left: 0.5rem;
   border-radius: var(--borderRadius);
-  border: 1px solid lightgray;
+  border: 1px solid var(--lightContainerBorderColor);
 }
 .lightpContainer {
   border-radius: var(--borderRadius);
-  border: 1px solid lightgray;
+  border: 1px solid var(--lightContainerBorderColor);
   padding: 0.5rem;
 }
 .bigContainer {
   padding: 2rem 1rem;
-  border: 1px solid gray;
+  border: 1px solid var(--lightContainerBorderColor);
   border-radius: var(--borderRadius);
 }
 /* --------------------------------------------------------------- */
@@ -210,19 +293,12 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid lightgray;
+  border: 1px solid var(--roundBorderColor);
   cursor: pointer;
   transition: all .2s;
 }
 .round:hover {
   box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.5);
-}
-
-.label {
-  padding: 0.5rem 0.8rem;
-  font-weight: 600;
-  width: fit-content;
-  border-radius: var(--borderRadius);
 }
 
 @media all and (max-width: 705px) {
@@ -251,14 +327,14 @@ button:hover {
     min-height: 15rem;
   }
   /* --------------------------- */
-  .miniprojects {
-    background-color: var(--backgroundColor);
-  }
-  .miniprojSidebar {
-    border-bottom: 1px solid lightgray;
-  }
   .bigContainer, .tabContainer {
-    background-color: white;
+    background-color: var(--lightContainerBorderColor);
+  }
+  .inputBox {
+    border-color: rgba(211, 211, 211, 0.3);
+  }
+  .lightContainer {
+    border-color: rgba(211, 211, 211, 0.3);
   }
   /* --------------------------- */
   .miniprojectsContainer {
