@@ -315,3 +315,19 @@
 .from, .to, .amount {
     gap: 0.5rem;
 }
+
+.treeviewBody {
+    gap: 1rem;
+}
+.menuitem {
+    gap: 0.25rem;
+}
+.menuitemChildren {
+    padding-left: 1rem;
+}
+.menuitemLabel {
+    cursor: pointer;
+}
+.menulist {
+    gap: 1rem;
+}

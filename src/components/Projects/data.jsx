@@ -13,6 +13,7 @@ import LoadMore from './LoadMore/LoadMore'
 import Quiz from './Quiz/Quiz'
 import TodoList from './TodoList/TodoList'
 import CurrencyConverter from './CurrencyConverter/CurrencyConverter'
+import TreeView from './TreeView.jsx/TreeView'
 
 const data = [
     {name: 'Modal Pop-Up', content: <ModalPopUp />},
@@ -28,6 +29,7 @@ const data = [
     {name: 'Search Auto Complete', content: <SearchAutoComplete />},
     {name: 'Load More', content: <LoadMore />},
     {name: 'Todo List', content: <TodoList />},
+    {name: 'TreeView', content: <TreeView />},
     {name: 'Drag And Drop Notes', content: <DragAndDropNotes />},
 ]
 

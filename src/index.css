@@ -399,8 +399,15 @@ button:hover {
     width: 100%;
   }
 
+  /* .navbar {
+    position: sticky;
+  } */
   .navbarBody {
+    /* position: fixed !important; */
+    /* background-color: white; */
+    /* width: 100%; */
     padding: .5rem !important;
+    z-index: 1000;
   }
   .navbarRight .displayNone {
     display: none;
