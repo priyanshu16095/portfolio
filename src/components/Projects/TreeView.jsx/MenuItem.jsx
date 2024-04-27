@@ -16,7 +16,7 @@ function MenuItem({item}) {
 
   return (
     <div className='menuitem flex-v'>
-      <p className='menuitemLabel md-font' onClick={() => handleOpen(item.label)}>{item.label}</p>
+      <p className='menuitemLabel link' onClick={() => handleOpen(item.label)}>{item.label}</p>
       <div className="menuitemChildren">
       {item.children && item.children.length > 0 && selectedItem.indexOf(item.label) !== -1 ?
       item.children.map((child, index) => <MenuItem item={child} key={index} />)
