@@ -41,6 +41,7 @@
   --linkFontColor: white;
   --titleFontColor: white;
   --pFontColor: white;
+  --mdFontColor: white;
 
   --inputBackgroundColor: #333333;
   --inputBoxBorderColor: #333333;
@@ -52,7 +53,7 @@
 
   --hiFontColor: white;
 
-  --modalBackgrounColor: #111111;
+  --modalBackgrounColor: #222222;
 } 
 [data-theme="light"] {
   --bodyBackgroundColor: white;
@@ -68,6 +69,7 @@
   --linkFontColor: black;
   --titleFontColor: black;
   --pFontColor: black;
+  --mdFontColor: black;
   
   --inputBackgroundColor: white;
   --inputBoxBorderColor: lightgray;
@@ -83,6 +85,9 @@
   --modalBackgrounColor: white;
 }
 
+.md-font {
+  color: var(--mdFontColor);
+}
 .modalBody {
   background-color: var(--modalBackgrounColor);
 }
@@ -259,7 +264,10 @@ button:hover {
   flex: 1;
   font-size: 1.1rem;
   padding: 0.5rem 1rem;
-  border-radius: var(--borderRadius);
+  border-radius: var(--borderRadius) 0  0 var(--borderRadius);
+}
+.inputBox .button {
+  border-radius: 0 var(--borderRadius) var(--borderRadius) 0;
 }
 .container {
   padding: 1rem;

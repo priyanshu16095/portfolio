@@ -228,9 +228,9 @@
 .profileDetailsText {
     gap: 0.5rem;
 }
-.profileDetailsText .md-font {
+/* .profileDetailsText .md-font {
     color: rgba(0, 0, 0);
-}
+} */
 
 .modalpageContainer {
     gap: 1rem;

@@ -42,7 +42,7 @@ function PasswordGenerator() {
 
             <div className='passwordgenContainer bigContainer flex-v'>
 
-                <div className="passwordgenPassword lightContainer">
+                <div className="inputBox passwordgenPassword lightContainer">
                     <p className='password'>{password}</p>
                     <button className="button" onClick={handleCopy}>{isCopied ? 'Copied' : 'Copy'}</button>
                 </div>

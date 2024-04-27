@@ -19,13 +19,13 @@ function ScrollToBottom() {
                 <p className="title">Scroll To Bottom</p>
                 <div className="scrollbodyContainer bigContainer flex-v">
                     <p className="md-font">Items</p>
-                    <div className="lightContainer flex-h">
+                    <div className="inputBox lightContainer flex-h">
                         <p className='md-font'>Top-Section</p>
                         <button className='button' onClick={handleScrollToBottom}>Scroll to bottom</button>
                     </div>
                     <Items />
                     <div ref={bottomRef}></div>
-                    <div className="lightContainer flex-h">
+                    <div className="inputBox lightContainer flex-h">
                         <p className='md-font'>Bottom-Section</p>
                         <button className='button' onClick={handleScrollToTop}>Scroll to top</button>
                     </div>
