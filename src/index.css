@@ -44,7 +44,7 @@
   --mdFontColor: white;
 
   --inputBackgroundColor: #333333;
-  --inputBoxBorderColor: #333333;
+  --inputBoxBorderColor: #555555;
 
   --color7: rgba(255, 255, 255, 0.7);
 
@@ -54,6 +54,8 @@
   --hiFontColor: white;
 
   --modalBackgrounColor: #222222;
+
+  --contactInputBorderColor: #555555;
 } 
 [data-theme="light"] {
   --bodyBackgroundColor: white;
@@ -83,8 +85,13 @@
   --hiFontColor: black;
 
   --modalBackgrounColor: white;
+
+  --contactInputBorderColor: lightgray;
 }
 
+.contactInput {
+  border-color: var(--contactInputBorderColor);
+}
 .md-font {
   color: var(--mdFontColor);
 }
