@@ -120,7 +120,7 @@
 .responsiveHero {
     display: none !important;
     width: 100%;
-    padding: 3rem 1rem;
+    padding: 3.5rem 1rem;
     gap: 1rem;
 }
 .about {
@@ -208,12 +208,6 @@
 /* WHATIKNOW---------------------------------- */
 .whatiknowContainer {
     gap: 1rem;
-}
-.icons {
-    gap: rem;
-}
-.frontend, .backend, .devops {
-    gap: 0rem;
 }
 
 /* FOOTER------------------------------------- */
