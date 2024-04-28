@@ -6,17 +6,16 @@
     --backgroundColor: #f5f5f7;
     --animationSpeed: 3s;
 }
-
-.contactContainer, .whatiknowContainer, .projectsContainer, .heroContainer {
+.contactContainer, .projectsContainer, .heroContainer {
     border: none !important;
 }
-/* ---------------------------------------------- */
 
+/* HOME---------------------------------------------- */
 .homeBody {
     gap: 4rem;
 }
-/* --------------------------------------------- */
 
+/* NAVBAR--------------------------------------------- */
 .mine_img {
     width: 3.5rem;
     border-radius: 50%;
@@ -47,8 +46,8 @@
 .navbarRight {
     gap: 0.5rem;
 }
-/* ----------------------------------------------------- */
 
+/* MINI-PROJECTS----------------------------------------------------- */
 .miniprojectsContainer {
     display: flex;
     padding: 0rem !important;
@@ -67,51 +66,8 @@
     flex: 0.8;
     padding: 1rem;
 }
-/* -------------------------------------------------- */
 
-.whatiknowBody {
-    padding: 1rem 0rem;
-}
-.whatiknowContainer {
-    gap: 1rem;
-}
-.whatiknowlabel {
-  padding: 0.3rem 0.5rem;
-  font-weight: 600;
-  width: fit-content;
-  border-radius: var(--borderRadius);
-  color: white;
-  background-color: black;
-}
-.cards {
-    gap: 1rem;
-    justify-content: space-between;
-}
-.card {
-    border-radius: 8px;
-    height: 14rem;
-    width: 13rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 1rem;
-    gap: 1rem;
-    background-color: var(--backgroundColor);
-}
-.cardlabels {
-    gap: 0.5rem;
-    flex-wrap: wrap;
-}
-.card img {
-    background-size: cover;
-    overflow: hidden;
-}
-
-/* -------------------------------------------------------- */
-
-.responsiveHero {
-    display: none !important;
-}
+/* HERO-------------------------------------------------------- */
 .heroContainer {
     padding: 3rem 0rem;
     gap: .5rem;
@@ -120,28 +76,6 @@
 .about {
     align-items: center;
 }
-
-/* .hi {
-    position: relative;
-}
-.hi::before, .hi::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-.hi::before {
-    background-color: white;
-    animation: typewriter var(--animationSpeed) steps(17) 1s forwards;
-}
-.hi::after {
-    width: 0.25rem;
-    background-color: black;
-    animation: typewriter var(--animationSpeed) steps(17) 1s forwards,
-     blink 750ms steps(18) infinite;
-} */
 .build {
     opacity: 0;
     transform: translateY(3rem);
@@ -187,7 +121,27 @@
     font-size: 2.5rem;
     margin: 0 .5rem;
 }
+.responsiveHero {
+    display: none !important;
+    width: 100%;
+    padding: 7rem 1rem;
+    gap: 1rem;
+}
+.about {
+    margin: .5rem 0;
+}
+.responsiveHero .hi {
+    font-size: 2rem;
+}
+.responsiveHero .build {
+    font-size: 2rem !important;
+    white-space: nowrap;
+}
+.resheroIcons {
+    gap: .5rem;
+}
 
+/* CONTACT------------------------------------------- */
 .contactBody {
     display: flex;
     gap: 1rem;
@@ -231,6 +185,7 @@
     margin-top: 0.5rem;
 }
 
+/* PROJECTS------------------------------------- */
 .projectsContainer {
     gap: 1rem;
 }
@@ -254,6 +209,7 @@
     margin: 0 .5rem;
 }
 
+/* FOOTER------------------------------------- */
 .footerContainer {
     justify-content: center;
     gap: .25rem;
@@ -261,6 +217,8 @@
     padding-bottom: 2rem;
 }
 
+
+/* ANIMATIONS----------------------------------------- */
 .scrollTracker {
     position: fixed;
     top: 0;
@@ -279,22 +237,3 @@
         scale: 1 1;
     }
 }
-/* .scrollTracker {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background-color: #0071e3;
-    width: 100%;
-    height: 0.5rem;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: scroll-watcher 1s linear forwards;
-  }
-  
-  @keyframes scroll-watcher {
-    to {
-      transform: scaleX(1);
-    }
-  }
-   */
