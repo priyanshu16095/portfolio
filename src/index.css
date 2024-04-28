@@ -19,6 +19,7 @@
   --graycontainerBorderColor: #333333;
   --lightContainerBorderColor: #333333;
   --lightContainerBorderColor-res: #111111;
+  --projSidebarBackgroundColor-res: #111111;
 
   --keyFontColor: rgba(255, 255, 255, 0.7);
   --linkFontColor: white;
@@ -48,11 +49,11 @@
   --appbodyColor: white;
   --navbarBackgroundColor: white;
   --projSidebarBackgroundColor: #f5f5f7;
-  --projSidebarBackgroundColor: white/;
+  --projSidebarBackgroundColor-res: white;
 
   --graycontainerBorderColor: gray;
   --lightContainerBorderColor: lightgray;
-  --lightContainerBorderColor-res: #f5f5f7;
+  --lightContainerBorderColor-res: white;
   
   --keyFontColor: rgba(0, 0, 0, 0.7);
   --linkFontColor: black;
@@ -74,7 +75,7 @@
   --modalBackgrounColor: white;
 
   --contactInputBorderColor: lightgray;
-  --contactInputBackgroundColor: #white;
+  --contactInputBackgroundColor: white;
 
   --projectCardBorderColor: lightgray;
 }
@@ -93,9 +94,6 @@
 }
 .hi {
   color: var(--hiFontColor);
-}
-.miniprojSidebar {
-  background-color: var(--projSidebarBackgroundColor);
 }
 .projectCard {
   border: 1px solid var(--projectCardBorderColor);
@@ -323,6 +321,9 @@ button:hover {
     min-height: 15rem;
   }
   /* --------------------------- */
+  .miniprojSidebar {
+    background-color: var(--projSidebarBackgroundColor-res) !important;
+  }
   .bigContainer, .tabContainer {
     background-color: var(--lightContainerBorderColor-res);
   }
