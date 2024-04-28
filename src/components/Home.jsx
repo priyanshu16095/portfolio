@@ -5,14 +5,15 @@ import Navbar from './Navbar'
 import Hero from './Hero'
 import Projects from './Projects'
 import Footer from './Footer'
+import WhatIKnow from './WhatIKnow'
 
 function Home() {
   return (
     <div className='home'>
-      {/* <div className="scrollTracker"></div> */}
       <div className="homeBody flex-v">
         <Navbar />
         <Hero />
+        <WhatIKnow />
         <Projects />
         <div className="homeProjects"><MiniProjects /></div>
         <Contact />

@@ -30,7 +30,7 @@ function Hero() {
             <p className='location'>Full Stack Development and Devops</p>
           </div>
           <p className='like'>I like to craft solid and scalable frontend products with great user experiences.    </p>
-          <div className="skillsMarquee flex">
+          {/* <div className="skillsMarquee flex">
             <div><FaHtml5 className='skillsIcon icon' /></div>
             <div><FaCss3Alt className='skillsIcon icon' /></div>
             <div><IoLogoJavascript className='skillsIcon icon' /></div>
@@ -40,7 +40,7 @@ function Hero() {
             <div><FaGitAlt className='skillsIcon icon' /></div>
             <div><FaDocker className='skillsIcon icon' /></div>
             <div><SiMysql className='skillsIcon icon' /></div>
-          </div>
+          </div> */}
         </div>
 
         <div className="responsiveHero flex-v">
