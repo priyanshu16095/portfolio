@@ -199,7 +199,7 @@
     flex-direction: column;
     width: fit-content;
     height: 15rem;
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
     padding: 1rem;
     border-radius: var(--borderRadius);
     gap: 1rem;
