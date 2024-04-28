@@ -10,6 +10,7 @@ import Footer from './Footer'
 function Home() {
   return (
     <div className='home'>
+      <div className="scrollTracker"></div>
       <div className="homeBody flex-v">
         <Navbar />
         <Hero />

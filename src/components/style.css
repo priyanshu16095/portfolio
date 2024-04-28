@@ -260,3 +260,41 @@
     align-items: center;
     padding-bottom: 2rem;
 }
+
+.scrollTracker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #0071e3;
+    scale: 0 1;
+    width: 100%;
+    height: .3rem;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+    transform-origin: left;
+}
+@keyframes scroll-watcher {
+    to {
+        scale: 1 1;
+    }
+}
+/* .scrollTracker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #0071e3;
+    width: 100%;
+    height: 0.5rem;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: scroll-watcher 1s linear forwards;
+  }
+  
+  @keyframes scroll-watcher {
+    to {
+      transform: scaleX(1);
+    }
+  }
+   */
