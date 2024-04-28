@@ -318,7 +318,7 @@ button:hover {
   box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.5);
 }
 .skillsIcon {
-  width: 4rem;
+  width: 3.5rem;
 }
 
 @media all and (max-width: 705px) {

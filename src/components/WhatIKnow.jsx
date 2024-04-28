@@ -20,7 +20,7 @@ function WhatIKnow() {
                     <p className="title">What I Know</p>
 
                     <div className="skills flex-s">
-                        <div className="frontend">
+                        <div className="frontend flex-v">
                             <p className="md-font">Frontend</p>
                             <div className="icons flex">
                                 <img src={htmlIconSvg} className='skillsIcon' />
@@ -29,7 +29,7 @@ function WhatIKnow() {
                                 <img src={reactSvgIcon} className='skillsIcon' />
                             </div>
                         </div>
-                        <div className="frontend">
+                        <div className="backend flex-v">
                             <p className="md-font">Backend</p>
                             <div className="icons flex">
                                 <img src={javaSvgIcon} className='skillsIcon' />
@@ -37,7 +37,7 @@ function WhatIKnow() {
                                 <img src={springSvgIcon} className='skillsIcon' />
                             </div>
                         </div>
-                        <div className="frontend">
+                        <div className="devops flex-v">
                             <p className="md-font">Devops</p>
                             <div className="icons flex">
                                 <img src={gitSvgIcon} className='skillsIcon' />

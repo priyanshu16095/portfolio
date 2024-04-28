@@ -209,12 +209,11 @@
 .whatiknowContainer {
     gap: 1rem;
 }
-.skills {
-    gap: 5rem;
-    flex-wrap: wrap;
-}
 .icons {
-    gap: 2rem;
+    gap: rem;
+}
+.frontend, .backend, .devops {
+    gap: 0rem;
 }
 
 /* FOOTER------------------------------------- */
