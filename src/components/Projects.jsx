@@ -6,25 +6,25 @@ import "slick-carousel/slick/slick-theme.css";
 function Projects() {
   const data = [
     {
-      img: '',
+      img: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       name: 'Email Verification API',
-      desc: 'Java Springboot, SMTP, Rest API, MySQL', 
+      desc: 'Java Springboot, SMTP, Rest API, MySQL',
       link: ''
     },
     {
-      img: '',
+      img: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       name: 'Disney+ Clone',
-      desc: 'React, React Redux, Firebase, Material UI', 
+      desc: 'React, React Redux, Firebase, Material UI',
       link: 'https://github.com/priyanshu16095/react-clones/tree/master/Disney-Plus'
     },
     {
-      img: '',
+      img: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       name: 'Whatsapp Clone',
       desc: 'React, React Redux, Firebase, Material UI',
       link: ''
     },
     {
-      img: '',
+      img: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       name: 'Student Management System',
       desc: 'Java Swing, MySQL',
       link: ''
@@ -46,7 +46,7 @@ function Projects() {
         breakpoint: 705,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1 ,
+          slidesToScroll: 1,
         },
       },
     ]
@@ -60,20 +60,20 @@ function Projects() {
           <p className="title">Projects</p>
 
           <div className="projectsCards">
-          <Slider {...settings}>
-            {data && data.map((item, index) => (
-              <div className='projectCard flex-v' key={index}>
-                <div className="projectImage">
-                  <img src={item.img} />
+            <Slider {...settings}>
+              {data && data.map((item, index) => (
+                <div className='projectCard flex-v' key={index}>
+                  <div className="projectImage">
+                    {/* <img src={item.img} /> */}
+                  </div>
+                  <div className="aboutProject flex-v">
+                    <p className="md-font">{item.name}</p>
+                    <p className="key">{item.desc}</p>
+                    <button className='button'><a href={item.link} target='_blank'>View</a></button>
+                  </div>
                 </div>
-                <div className="aboutProject flex-v">
-                  <p className="md-font">{item.name}</p>
-                  <p className="key">{item.desc}</p>
-                  <button className='button'><a href={item.link} target='_blank'>View</a></button>
-                </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
           </div>
 
         </div>
@@ -87,7 +87,7 @@ export default Projects
 
 
 // app
-// title 
+// title
 // link
 // md-font
 // key

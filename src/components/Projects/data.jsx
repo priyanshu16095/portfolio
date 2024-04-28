@@ -30,7 +30,7 @@ const data = [
     {name: 'Load More', content: <LoadMore />},
     {name: 'Todo List', content: <TodoList />},
     {name: 'TreeView', content: <TreeView />},
-    {name: 'Drag And Drop Notes', content: <DragAndDropNotes />},
+    // {name: 'Drag And Drop Notes', content: <DragAndDropNotes />},
 ]
 
 export default data

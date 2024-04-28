@@ -189,20 +189,26 @@
     gap: 1rem;
 }
 .aboutProject {
-    gap: .5rem;
+    gap: .25rem;
+    margin-top: 7rem;
 }
 .aboutProject .button {
     width: 100%;
 }
 .projectCard {
+    flex-direction: column;
     width: fit-content;
     height: 15rem;
     border: 1px solid lightgray;
     padding: 1rem;
     border-radius: var(--borderRadius);
+    gap: 1rem;
 }
 .slick-slide > div {
     margin: 0 .5rem;
+}
+.projectImage {
+    border-radius: var(--borderRadius);
 }
 
 /* WHATIKNOW---------------------------------- */

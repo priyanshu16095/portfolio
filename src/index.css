@@ -5,26 +5,9 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 :root {
-  /* --borderRadius: 8px;
+  --borderRadius: 8px;
   --blueColor: #0071e3;
   --appleColor: #f5f5f7; 
-
-  --lightContainersBackgroundColor: lightgray;
-  --lightBigContainerBackgroundColor: gray;
-  --lightContainerBackgroundColor: gray;
-  --lightInputBoxBorderColor: lightgray;
-  --lightRoundBorderColor: lightgray;
-
-  --darkAppBackgroundColor: #111111;
-  --darkAppBodyBackgroundColor: #000000;
-  --darkContainersBackgroundColor: #333333;
-  --darkInputboxBackgroundColor: #333333;
-
-  --dark5: #2f3e46;
-  --dark4: #354f52;
-  --dark3: #52796f;
-  --dark2: #84a98c;
-  --dark1: #cad2c5; */
 }
 
 [data-theme="dark"] {
@@ -89,71 +72,37 @@
   --contactInputBorderColor: lightgray;
 }
 
+/* PROJECTS----------------------------------- */
 .contactInput {
   border-color: var(--contactInputBorderColor);
 }
 .modalBody {
   background-color: var(--modalBackgrounColor);
 }
-.hi {
-  color: var(--hiFontColor) !important;
-}
-/* .navbar {
-  background-color: var(--navbarBackgroundColor);
-} */
-p {
-  color: var(--pFontColor );
-}
-.key {
-  color: var(--keyFontColor);
-}
-.email {
+.email, .hero, .build, .contact, .hi {
   color: var(--color7);
-}
-.hero {
-  color: var(--color7);
-}
-.build {
-  color: var(--color7);
-}
-.contact {
-  color: var(--color7);
-}
-.link {
-  color: var(--linkFontColor);
-}
-.hi {
-  color: black;
-}
-.icon {
-  color: var(--iconFontColor);
-}
-.title {
-  color: var(--titleFontColor);
 }
 .miniprojSidebar {
   background-color: var(--projSidebarBackgroundColor);
 }
- input {
-  border-color: var(--inputBoxBorderColor);
-}
 
-input, textarea {
-  background-color: var(--inputBackgroundColor);
-}
-
+/* HTML------------------------------------------- */
 a {
   text-decoration: none;
   color: inherit;
+}
+p {
+  color: var(--pFontColor );
 }
 button {
   cursor: pointer;
 }
 input[type="range"], input[type="checkbox"] {
+  border-color: var(--inputBoxBorderColor);
   cursor: pointer;
 }
-p {
-  font-size: 16px;
+input, textarea {
+  background-color: var(--inputBackgroundColor);
 }
 
 body {
@@ -182,11 +131,14 @@ body::-webkit-scrollbar {
 .title {
   font-size: 1.5rem;
   font-weight: 640;
+  color: var(--titleFontColor);
 }
 .link {
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
+  font-size: 16px;
   font-weight: 550;
   cursor: pointer;
+  color: var(--linkFontColor);
 }
 .link:hover {
   color: var(--blueColor);
@@ -316,6 +268,9 @@ button:hover {
 }
 .round:hover {
   box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.5);
+}
+.icon {
+  color: var(--iconFontColor);
 }
 .skillsIcon {
   width: 3.5rem;
