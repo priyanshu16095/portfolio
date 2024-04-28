@@ -124,17 +124,17 @@
 .responsiveHero {
     display: none !important;
     width: 100%;
-    padding: 7rem 1rem;
+    padding: 4rem 1rem;
     gap: 1rem;
 }
 .about {
     margin: .5rem 0;
 }
 .responsiveHero .hi {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 .responsiveHero .build {
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
     white-space: nowrap;
 }
 .resheroIcons {
