@@ -34,6 +34,9 @@
     align-items: center;
     gap: 1rem;
 }
+.navIcons {
+    gap: 1rem;
+}
 .name {
     font-size: 1.4rem;
     font-weight: 700;
@@ -45,6 +48,25 @@
 }
 .navbarRight {
     gap: 0.5rem;
+}
+.navbarOpen {
+    display: flex;
+    justify-content: center;
+    padding: 0rem 2rem;
+    gap: 1rem;
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    top: 0;
+    /* right: 0; */
+    right: -50%;
+    backdrop-filter: blur(10px);
+    z-index: 2000;
+}
+.closeIcon {
+    position: absolute;
+    top: 2%;
+    right: 10%;
 }
 
 /* MINI-PROJECTS----------------------------------------------------- */
@@ -99,6 +121,7 @@
 }
 .build {
     color: rgba(0, 0, 0, 0.7);
+    /* z-index: -1; */
 }
 .location {
     font-weight: 600;

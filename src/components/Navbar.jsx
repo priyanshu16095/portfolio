@@ -1,49 +1,71 @@
-import React, { useState } from 'react'
-import './style.css'
-import mine_img from '../assets/mine_img.jpg'
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import React, { useEffect, useRef } from 'react';
+import './style.css';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import CloseIcon from '@mui/icons-material/Close';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
-import { useTheme } from '../theme-context'
+import { useTheme } from '../theme-context';
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Navbar() {
-  const { theme, toggleTheme } = useTheme()
+  const fullRef = useRef(null);
 
-  const [isOpen, setIsOpen] = useState(false)
+  useEffect(() => {
+    const tl = gsap.timeline({ paused: true });
+
+    tl.to(fullRef.current, {
+      right: 0,
+      duration: 0.8,
+    })
+      .from(fullRef.current.querySelectorAll('.navbarOpen p'), {
+        x: 150,
+        duration: 0.7,
+        stagger: 0.3,
+        opacity: 0,
+      })
+      .from(fullRef.current.querySelector('.navbarOpen .closeIcon'), {
+        opacity: 0,
+      });
+
+    tl.pause();
+    fullRef.current.animationTimeline = tl;
+  }, []);
+
+  const handleOpen = () => {
+    fullRef.current.animationTimeline.play();
+  };
+  
+  const handleClose = () => {
+    fullRef.current.animationTimeline.reverse();
+  };
+
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <div className='navbar'>
       <div className="navbarBody">
-        <div className="navbarContainer flex-s">
+        <div className="navbarOpen flex-v" ref={fullRef}>
+          <CloseIcon className='closeIcon' onClick={handleClose} />
+          <p className="title">Home</p>
+          <p className="title">Mini Projects</p>
+          <p className="title">Contact</p>
+          <p className="title">About</p>
+        </div>
 
-          <div className="navbarLeft">
-            <div className=""><img src={mine_img} className='mine_img' /></div>
-            <div className="info flex-v">
-              <p className="name">Priyanshu Gupta</p>
-              <p className="email">priyanshu@gmail.com</p>
-            </div>
-          </div>
-
-          <div className="navbarRight flex">
-            <button className="button displayNone">Download CV</button>
-
-            <a href="https://www.linkedin.com/in/priyanshu-gupta-960136303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' className='round displayNone'><LinkedInIcon className='icon' /></a>
-
-            <a href="https://github.com/priyanshu16095" target='_blank' className='round displayNone'><GitHubIcon className='icon' /></a>
-
+        <div className="navbarContainer flex-e">
+          <div className="navIcons flex">
             <div className="round" onClick={toggleTheme}>
               {theme === 'dark' ? <DarkModeIcon className='icon' /> : <LightModeIcon className='icon' />}
             </div>
-
-            <div className="round displayNone" onClick={() => setIsOpen(!isOpen)}>{isOpen ? <CloseIcon className='icon' /> : <MenuIcon className='icon' />}</div>
+            <div className="round"><MenuIcon className='openIcon' onClick={handleOpen} /></div>
           </div>
-    
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

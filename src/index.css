@@ -44,6 +44,8 @@
   --contactInputBackgroundColor: #111111;
   
   --projectCardBorderColor: #333333;
+
+  --navbarOpenBackgroundColor: #111111;
 } 
 [data-theme="light"] {
   --bodyBackgrounColor: white;
@@ -80,6 +82,12 @@
   --contactInputBackgroundColor: white;
 
   --projectCardBorderColor: lightgray;
+
+  --navbarOpenBackgroundColor: #lightgray;
+}
+
+.navbarOpen {
+  background-color: var(--navbarOpenBackgroundColor);
 }
 
 
@@ -450,6 +458,10 @@ button:hover {
     flex-direction: column;
     align-items: start;
     gap: 1rem;
+  }
+
+  .navbarOpen {
+    width: 50%;
   }
 }
 
