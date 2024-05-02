@@ -53,8 +53,7 @@
 }
 
 .tabContainer {
-    border: 1px solid gray;
-    border-radius: var(--borderRadius);
+    padding: 0rem !important;
 }
 .tabsContent {
     padding: 1rem;
@@ -121,8 +120,8 @@
 }
 .strengthContainer {
     padding: 0.5rem;
-    border: 1px solid lightgray;
-    border-radius: var(--borderRadius);
+    /* border: 1px solid lightgray; */
+    /* border-radius: var(--borderRadius); */
 }
 .strengthInfo {
     font-weight: 600;
@@ -189,10 +188,10 @@
 
 .accordionBox {
     gap: 0.5rem;
-    padding: 1rem;
+    padding: 1rem !important;
     border: 1px solid lightgray;
     border-radius: var(--borderRadius);
-    padding-bottom: 1rem;
+    padding-bottom: 1rem !important;
 }
 .accordionContainer {
     gap: 1rem;

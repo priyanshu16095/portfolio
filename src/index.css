@@ -109,6 +109,9 @@
   border: 1px solid var(--projectCardBorderColor);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
+.miniprojSidebar {
+  background-color: var(--projSidebarBackgroundColor);
+}
 
 /* HTML------------------------------------------- */
 a {
@@ -296,7 +299,7 @@ button:hover {
   color: var(--iconFontColor);
 }
 .skillsIcon {
-  width: 3.5rem;
+  width: 3rem;
 }
 
 @media all and (max-width: 705px) {
@@ -462,6 +465,10 @@ button:hover {
 
   .navbarOpen {
     width: 50%;
+  }
+
+  .tabContainer {
+    border-bottom-color: var(--lightContainerBorderColor);
   }
 }
 

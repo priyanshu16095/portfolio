@@ -32,7 +32,7 @@ function Tabs() {
 
         <div className="tabsBody flex-v">
             <p className="title">Tabs</p>
-            <div className="tabContainer flex-v">
+            <div className="tabContainer lightpContainer flex-v">
                 <div className="tabsHeader flex-h">
                     <div className="tabNames flex">
                         {tabs && tabs.length ?

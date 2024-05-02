@@ -121,7 +121,6 @@
 }
 .build {
     color: rgba(0, 0, 0, 0.7);
-    /* z-index: -1; */
 }
 .location {
     font-weight: 600;
@@ -141,7 +140,6 @@
     width: 100%;
 }
 .responsiveHero {
-    display: none !important;
     width: 100%;
     padding: 3.5rem 1rem;
     gap: 1rem;
@@ -237,6 +235,9 @@
 /* WHATIKNOW---------------------------------- */
 .whatiknowContainer {
     gap: 1rem;
+}
+.skills {
+    padding: 0rem .5rem;
 }
 
 /* FOOTER------------------------------------- */

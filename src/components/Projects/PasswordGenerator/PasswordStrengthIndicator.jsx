@@ -22,7 +22,7 @@ const PasswordStrengthIndicator = ({password}) => {
     if(!passwordStrength) return <React.Fragment></React.Fragment>
 
     return (
-        <div className="strengthContainer flex-h">
+        <div className="strengthContainer lightpContainer flex-h">
             <p>Strength</p>
             <p className="strengthInfo" style={{backgroundColor:passwordStrength[1]}}>{passwordStrength[0]}</p>
         </div>

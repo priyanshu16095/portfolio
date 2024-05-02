@@ -38,7 +38,7 @@ function Accordion() {
                     <div className="accordionBoxes flex-v">
                         {data && data.length ?
                             data.map((box, index) => (
-                                <div className='accordionBox flex-v' key={index}>
+                                <div className='accordionBox lightpContainer flex-v' key={index}>
                                     <div className="accordionBoxQuestion flex-h">
                                         <p className="md-font">{box.question}</p>
                                         <button className="button" onClick={enableMultiSelection ? () => handleMultiSelection(index) : () => handleSingleSelection(index)}>{enableMultiSelection ? multipleId.indexOf(index) !== -1 ? '-' : '+' : selectedItemIndex === index ? '-' : '+'}</button>
