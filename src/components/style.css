@@ -128,17 +128,6 @@
 .like {
     font-size: 1.1rem;
 }
-.skillsMarquee, .skillsMarqueeRes {
-    margin-top: 2rem;
-}
-.skillsMarquee {
-    gap: 1rem;
-}
-.skillsMarqueeRes {
-    margin: auto;
-    margin-top: 2rem;
-    width: 100%;
-}
 .responsiveHero {
     width: 100%;
     padding: 3.5rem 1rem;
@@ -238,6 +227,7 @@
 }
 .skills {
     padding: 0rem .5rem;
+    gap: 1rem;
 }
 
 /* FOOTER------------------------------------- */
