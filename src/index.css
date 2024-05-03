@@ -337,6 +337,9 @@ button:hover {
     font-weight: 500;
     font-size: 1.3rem;
   }
+  p {
+    font-size: 1rem;
+  }
   .link {
     font-weight: 400;
     font-size: 16px;
