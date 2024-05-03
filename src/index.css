@@ -123,6 +123,9 @@
   .heroContainer .location {
     font-size: 1.2rem;
   }
+  .hero {
+    height: 69vh;
+  }
 }
 
 /* HTML------------------------------------------- */
