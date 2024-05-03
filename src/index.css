@@ -114,13 +114,13 @@
 }
 
 @media all and (min-width: 705px) {
-  .responsiveHero .md-font, .like {
+  .heroContainer .md-font, .like {
     font-size: 1.2rem;
   }
   .hi {
     font-size: 2.8rem !important;
   }
-  .responsiveHero .location {
+  .heroContainer .location {
     font-size: 1.2rem;
   }
 }
@@ -249,6 +249,8 @@ p {
   background-color: var(--blueColor);
   color: white;
   transition: all 0.1s;
+
+  
 }
 button:hover {
   background-color: #0071e3dd;
@@ -439,7 +441,7 @@ button:hover {
     font-weight: 550;
   }
 
-  .responsiveHero {
+  .heroContainer {
     display: flex !important;
     flex-direction: column;
   }
@@ -471,10 +473,6 @@ button:hover {
     width: 100%;
   }
 
-  .heroContainer {
-    display: none;
-  }
-
   .whatiknowContainer .skills {
     flex-direction: column;
     align-items: start;
@@ -487,6 +485,12 @@ button:hover {
 
   .tabContainer {
     border-bottom-color: var(--lightContainerBorderColor);
+  }
+
+  .skillsIcons {
+    align-items: start;
+    gap: 1rem;
+    flex-direction: column;
   }
 }
 

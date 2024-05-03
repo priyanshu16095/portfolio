@@ -90,11 +90,6 @@
 }
 
 /* HERO-------------------------------------------------------- */
-.heroContainer {
-    padding: 3rem 0rem;
-    gap: .5rem;
-    align-items: center;
-} 
 .about {
     align-items: center;
 }
@@ -128,7 +123,7 @@
 .like {
     font-size: 1.1rem;
 }
-.responsiveHero {
+.heroContainer {
     width: 100%;
     padding: 3.5rem 1rem;
     gap: 1rem;
@@ -136,10 +131,10 @@
 .about {
     margin: .5rem 0;
 }
-.responsiveHero .hi {
+.heroContainer .hi {
     font-size: 1.8rem;
 }
-.responsiveHero .build {
+.heroContainer .build {
     font-size: 1.8rem !important;
     white-space: nowrap;
 }
@@ -209,10 +204,10 @@
     flex-direction: column;
     width: fit-content;
     height: 15rem;
-    /* border: 1px solid lightgray; */
     padding: 1rem;
     border-radius: var(--borderRadius);
     gap: 1rem;
+    box-shadow: none !important;
 }
 .slick-slide > div {
     margin: 0 .5rem;
@@ -228,6 +223,12 @@
 .skills {
     padding: 0rem .5rem;
     gap: 1rem;
+}
+.skillsIcons {
+    gap: 5rem;
+}
+.icons {
+    flex-wrap: wrap;
 }
 
 /* FOOTER------------------------------------- */
