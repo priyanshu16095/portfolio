@@ -30,9 +30,9 @@ function WhatIKnow() {
                                     <img src={htmlIconSvg} className='skillsIcon' />
                                     <img src={cssSvgIcon} className='skillsIcon' />
                                     <img src={javascriptSvgIcon} className='skillsIcon' />
-                                    <img src={reactSvgIcon} className='skillsIcon' />
                                     <img src={javaSvgIcon} className='skillsIcon' />
                                     <img src={pythonSvgIcon} className='skillsIcon' />
+                                    <img src={reactSvgIcon} className='skillsIcon' />
                                     <img src={springSvgIcon} className='skillsIcon' />
                                     <img src={gitSvgIcon} className='skillsIcon' />
                                     <img src={dockerSvgIcon} className='skillsIcon' />

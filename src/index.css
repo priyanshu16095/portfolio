@@ -498,5 +498,8 @@ button:hover {
     gap: 1rem;
     flex-direction: column;
   }
+  .skillsIcon {
+    width: 3rem;
+  }
 }
 
