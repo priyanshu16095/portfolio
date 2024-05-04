@@ -12,8 +12,9 @@ import { useGSAP } from '@gsap/react';
 function Navbar() {
   useGSAP(() => {
     gsap.to('.themeIcon .icon', {
-      rotate: 100,
-      duration: 1
+      rotate: 360,
+      duration: 3,
+      dealy: 1
     })
   })
 
@@ -27,7 +28,7 @@ function Navbar() {
             <div className="round themeIcon" onClick={toggleTheme}>
               {theme === 'dark' ? <DarkModeIcon className='icon' /> : <LightModeIcon className='icon' />}
             </div>
-            <div className="round"><MenuIcon className='openIcon icon' /></div>
+            <div className="round openIconDiv"><MenuIcon className='openIcon icon' /></div>
           </div>
         </div>
       </div>

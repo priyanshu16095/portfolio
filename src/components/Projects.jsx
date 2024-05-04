@@ -65,18 +65,13 @@ function Projects() {
 
           <p className="title">Projects</p>
 
-          <div className="projectsCards">
+          <div className="projectsCards flex-v">
             <Slider {...settings}>
               {data && data.map((item, index) => (
-                <div className='projectCard flex-v' key={index}>
-                  <div className="projectImage">
-                    {/* <img src={item.img} /> */}
-                  </div>
-                  <div className="aboutProject flex-v">
+                <div className='projectCard' key={index}>
                     <p className="md-font">{item.name}</p>
                     <p className="key">{item.desc}</p>
-                    <button className='button'><a href={item.link} target='_blank'>View</a></button>
-                  </div>
+                    <button className='button'><a href={item.link} target='_blank'>View</a></button>            
                 </div>
               ))}
             </Slider>

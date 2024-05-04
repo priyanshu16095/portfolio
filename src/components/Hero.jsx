@@ -3,18 +3,11 @@ import './style.css'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap'
 
 function Hero() {
-
-  useGSAP(() => {
-    gsap.to(".button", {
-      y: 10,
-      opacity: 1,
-      duration: 1
-    })
-  })
+  function handleClick() {
+    window.open('https://github.com/priyanshu16095/resume/blob/main/resume.pdf', '_blank')
+  }
 
   return (
     <div className='hero'>
@@ -32,7 +25,7 @@ function Hero() {
             <a href="https://github.com/priyanshu16095" target='_blank' className='round'><GitHubIcon className='icon' /></a>
             <a href="#" className='icon round'><EmailIcon /></a>
           </div>
-          <button className="button">Download CV</button>
+          <button className="button" onClick={handleClick}>Download CV</button>
         </div>
       </div>
 
