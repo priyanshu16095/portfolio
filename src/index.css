@@ -46,6 +46,8 @@
   --projectCardBorderColor: #333333;
 
   --navbarOpenBackgroundColor: #111111;
+
+  --getintouchBackgroundColor: #000000;
 } 
 [data-theme="light"] {
   --bodyBackgrounColor: white;
@@ -83,13 +85,16 @@
 
   --projectCardBorderColor: lightgray;
 
-  --navbarOpenBackgroundColor: #lightgray;
+  --navbarOpenBackgroundColor: lightgray;
+  --getintouchBackgroundColor: #f5f5f7;
 }
 
 .navbarOpen {
   background-color: var(--navbarOpenBackgroundColor);
 }
-
+.getintouch {
+  background-color: var(--getintouchBackgroundColor);
+}
 
 /* PROJECTS----------------------------------- */
 .contactInput {
