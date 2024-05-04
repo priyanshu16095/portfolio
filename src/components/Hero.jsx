@@ -9,12 +9,12 @@ function Hero() {
     <div className='hero'>
       <div className="heroBody">
         <div className="heroContainer flex-v">
-          <p className='md-font'>Hi, I'm</p>
+          <p className='heroA'>Hi, I'm</p>
           <div className="about">
-            <h1 className='hi'>Priyanshu</h1>
-            <h1 className='build'>I build things for the web</h1>
+            <h1 className='heroB pri'>Priyanshu</h1>
+            <h1 className='heroB build'>I build things for the web</h1>
           </div>
-          <p className='md-font'>Full Stack Development and Devops</p>
+          <p className='heroA'>Full Stack Development and Devops</p>
           {/* <p className='like'>I like to craft solid and scalable frontend products with great user experiences.</p> */}
           <div className="resheroIcons flex">
             <a href="https://www.linkedin.com/in/priyanshu-gupta-960136303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' className='round'><LinkedInIcon className='icon' /></a>

@@ -109,7 +109,7 @@
 .miniprojSidebar {
   background-color: var(--projSidebarBackgroundColor);
 }
-.hi {
+.pri {
   color: var(--hiFontColor);
 }
 
@@ -326,6 +326,9 @@ button:hover {
 }
 
 @media all and (max-width: 705px) {
+  .hero {
+    height: 100dvh;
+  }
   body {
     background-color: var(--bodyBackgrounColor-res);
   }
@@ -346,6 +349,12 @@ button:hover {
   .link {
     font-weight: 400;
     font-size: 16px;
+  }
+  .heroA {
+    font-size: 1.1rem;
+  }
+  .heroB {
+    font-size: 1.6rem;
   }
   .button {
     font-weight: 500;
