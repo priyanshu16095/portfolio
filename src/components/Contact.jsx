@@ -31,11 +31,11 @@ function Contact() {
           <div className="contactwithmeContianer flex-v">
             <div className="flex locationDiv">
               <LocationOnIcon className="icon" />
-              <p className="location">Planet Earth</p>
+              <p className="md-font location">Planet Earth</p>
             </div>
             <div className="flex mailDiv">
               <EmailIcon className='icon' />
-              <p className="location">priyanshu16095@gmail.com</p>
+              <p className="md-font mail">priyanshu16095@gmail.com</p>
             </div>
             <div className="icons flex">
             <a href="https://github.com/priyanshu16095" target='_blank' className='round'><GitHubIcon className='icon' /></a>

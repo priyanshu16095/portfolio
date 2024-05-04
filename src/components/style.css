@@ -153,6 +153,9 @@
 .locationDiv, .mailDiv {
     gap: 1rem;
 }
+.location, .mail {
+    font-size: 1.1rem !important;
+}
 .getintouch {
     gap: 1rem;
     width: fit-content;
