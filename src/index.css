@@ -326,9 +326,6 @@ button:hover {
 }
 
 @media all and (max-width: 705px) {
-  .hero {
-    height: 100dvh;
-  }
   body {
     background-color: var(--bodyBackgrounColor-res);
   }
