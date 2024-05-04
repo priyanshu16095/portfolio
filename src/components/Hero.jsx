@@ -3,8 +3,19 @@ import './style.css'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap'
 
 function Hero() {
+
+  useGSAP(() => {
+    gsap.to(".button", {
+      y: 10,
+      opacity: 1,
+      duration: 1
+    })
+  })
+
   return (
     <div className='hero'>
       <div className="heroBody">

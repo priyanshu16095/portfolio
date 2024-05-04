@@ -149,6 +149,7 @@ input, textarea {
 
 body {
   background-color: var(--bodyBackgrounColor);
+  transition: all .5s;
 }
 .app {
   height: 100vh;
