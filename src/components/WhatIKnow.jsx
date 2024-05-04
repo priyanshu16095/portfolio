@@ -13,6 +13,7 @@ import pythonSvgIcon from '../assets/pythonSvgIcon.svg'
 import kubernetesvgIcon from '../assets/kubernetesSvgIcon.svg'
 import redisSvgIcon from '../assets/redisSvgIcon.svg'
 import tsSvgIcon from '../assets/tsSvgIcon.svg'
+import figmaSvgIcon from '../assets/figmaSvgIcon.svg'
 
 function WhatIKnow() {
     return (
@@ -37,6 +38,7 @@ function WhatIKnow() {
                                     <img src={gitSvgIcon} className='skillsIcon' />
                                     <img src={dockerSvgIcon} className='skillsIcon' />
                                     <img src={linuxSvgIcon} className='skillsIcon' />
+                                    <img src={figmaSvgIcon} className='skillsIcon' />
                                 </div>
                             </div>
                             <div className="learning flex-v">
