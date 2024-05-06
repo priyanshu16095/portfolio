@@ -349,7 +349,7 @@ button:hover {
     overflow-x: hidden;
   }
   .skillsIcon {
-    width: 3rem;
+    width: 2.3rem !important;
   }
   .title {
     font-weight: 500;

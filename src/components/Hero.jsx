@@ -33,13 +33,13 @@ function Hero() {
 
           <div className="heroRight displayNone">
             <div className="box box1 flex-v">
-              <p className="heroB">Coder</p>
+              <p className="heroB">{'<'} coder {'>'}</p>
               <p className="key">A optimistic Developer who writes clean and efficient code</p>
             </div>
             <div className="box box2"></div>
             <div className="box box3"></div>
             <div className="box box4 flex-v">
-              <p className="heroB">About</p>
+              <p className="heroB">about</p>
               <p className="key">First Year Engineering student looking for internships.</p>
             </div>
           </div>
