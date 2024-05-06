@@ -39,7 +39,7 @@ function Contact() {
             </div>
             <div className="icons flex">
             <a href="https://github.com/priyanshu16095" target='_blank' className='round'><GitHubIcon className='icon' /></a>
-              <a href="https://www.linkedin.com/in/priyanshu-gupta-960136303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' className='round'><LinkedInIcon className='icon' /></a>
+              <a href="#" className='round'><LinkedInIcon className='icon' /></a>
               <div className="round"><XIcon className='icon' /> </div>
             </div>
           </div>

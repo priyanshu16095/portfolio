@@ -8,19 +8,19 @@ function Projects() {
     {
       img: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       name: 'Email Verification API',
-      desc: 'Java Springboot, SMTP, Rest API, MySQL',
+      desc: 'Java Spring, SMTP, Rest API, MySQL',
       link: ''
     },
     {
       img: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       name: 'Disney+ Clone',
-      desc: 'React, React Redux, Firebase, Material UI',
+      desc: 'React, React Redux, Firebase, OMDB API',
       link: 'https://github.com/priyanshu16095/react-clones/tree/master/Disney-Plus'
     },
     {
       img: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       name: 'Whatsapp Clone',
-      desc: 'React, React Redux, Firebase, Material UI',
+      desc: 'React, React Redux, Firebase, Socket.IO',
       link: ''
     },
     {

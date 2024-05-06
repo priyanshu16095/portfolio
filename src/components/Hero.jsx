@@ -12,21 +12,41 @@ function Hero() {
   return (
     <div className='hero'>
       <div className="heroBody">
-        <div className="heroContainer flex-v">
-          <p className='heroA'>Hi, I'm</p>
-          <div className="about">
-            <h1 className='heroB pri'>Priyanshu</h1>
-            <h1 className='heroB build'>I build things for the web</h1>
+        
+        <div className="heroBox flex-s">
+          
+          <div className="heroContainer flex-v">
+            <p className='heroA'>Hi, I'm</p>
+            <div className="about">
+              <h1 className='heroB pri'>Priyanshu</h1>
+              <h1 className='heroB build'>I build things for the web</h1>
+            </div>
+            <p className='heroA'>Full Stack Development and Devops</p>
+            {/* <p className='like'>I like to craft solid and scalable frontend products with great user experiences.</p> */}
+            <div className="resheroIcons flex">
+              <a href="" className='round'><LinkedInIcon className='icon' /></a>
+              <a href="https://github.com/priyanshu16095" target='_blank' className='round'><GitHubIcon className='icon' /></a>
+              <a href="#" className='icon round'><EmailIcon /></a>
+            </div>
+            <button className="button" onClick={handleClick}>Download CV</button>
           </div>
-          <p className='heroA'>Full Stack Development and Devops</p>
-          {/* <p className='like'>I like to craft solid and scalable frontend products with great user experiences.</p> */}
-          <div className="resheroIcons flex">
-            <a href="https://www.linkedin.com/in/priyanshu-gupta-960136303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' className='round'><LinkedInIcon className='icon' /></a>
-            <a href="https://github.com/priyanshu16095" target='_blank' className='round'><GitHubIcon className='icon' /></a>
-            <a href="#" className='icon round'><EmailIcon /></a>
+
+          <div className="heroRight displayNone">
+            <div className="box box1 flex-v">
+              <p className="heroB">Coder</p>
+              <p className="key">A optimistic Developer who writes clean and efficient code</p>
+            </div>
+            <div className="box box2"></div>
+            <div className="box box3"></div>
+            <div className="box box4 flex-v">
+              <p className="heroB">About</p>
+              <p className="key">First Year Engineering student looking for internships.</p>
+            </div>
           </div>
-          <button className="button" onClick={handleClick}>Download CV</button>
+
+
         </div>
+
       </div>
 
     </div>

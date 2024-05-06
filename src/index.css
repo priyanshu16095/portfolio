@@ -48,6 +48,8 @@
   --navbarOpenBackgroundColor: #111111;
 
   --getintouchBackgroundColor: #000000;
+
+  --heroRightBackgrounColor: #111111;
 } 
 [data-theme="light"] {
   --bodyBackgrounColor: white;
@@ -87,6 +89,8 @@
 
   --navbarOpenBackgroundColor: lightgray;
   --getintouchBackgroundColor: #f5f5f7;
+
+  --heroRightBackgrounColor: #f5f5f7;
 }
 
 .navbarOpen {
@@ -96,6 +100,11 @@
   background-color: var(--getintouchBackgroundColor);
 }
 
+.heroRight .box1, .box4 {
+  background-color: var(--heroRightBackgrounColor);
+
+}
+ 
 /* PROJECTS----------------------------------- */
 .contactInput {
   border-color: var(--contactInputBorderColor);
@@ -160,7 +169,7 @@ body {
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
-  max-width: 1400px;
+  max-width: 1450px;
   margin: auto;
 }
 .app::-webkit-scrollbar {
@@ -326,7 +335,12 @@ button:hover {
   width: 3rem;
 }
 
+.displayNone {}
+
 @media all and (max-width: 705px) {
+  .displayNone {
+    display: none;
+  }
   body {
     background-color: var(--bodyBackgrounColor-res);
   }
