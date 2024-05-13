@@ -521,7 +521,7 @@ button:hover {
   }
 
   .projectCard__img {
-    height: 9rem;
+    width: 100%;
   }
 }
 
