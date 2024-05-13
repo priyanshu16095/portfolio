@@ -210,18 +210,27 @@
 .projectsContainer {
     gap: 1rem;
 }
-.projectCard {
-    height: 15rem;
-    padding: 1rem;
-    align-content: end;
-    border-radius: 8px;
-}
 .projectCard .button {
     margin-top: .5rem;
     width: 100%;
 }
 .slick-slide > div {
     margin: 0 .5rem;
+}
+.projectCard {
+    /* height: 15rem; */
+    height: fit-content;;
+    padding: 1rem;
+    align-content: end;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+.projectCard__img {
+    height: 10rem;
+    margin: auto;
+    margin-bottom: .5rem;
+    border-radius: 8px;
 }
 
 /* WHATIKNOW---------------------------------- */
