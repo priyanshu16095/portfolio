@@ -13,7 +13,7 @@ function Hero() {
     <div className='hero'>
       <div className="heroBody">
         
-        <div className="heroBox">
+        <div className="heroBox flex-s">
           
           <div className="heroContainer flex-v">
             <p className='heroA'>Hi, I'm</p>

@@ -93,16 +93,10 @@
 .hero {
     padding: 0rem 1rem;
 }
-.heroBox {
-    display: flex;
-    align-items: center ;
-}
 .heroContainer {
     gap: 1rem;
-    flex: 0.8;
 }
 .heroRight {
-    flex: 0.2;
     flex-wrap: wrap;
     display: grid;
     grid-template-columns: auto auto;
@@ -138,6 +132,9 @@
 .heroB {
     font-size: 2.5rem;
     font-weight: 700;
+}
+.heroB .build {
+    text-wrap: nowrap !important;
 }
 .about {
     align-items: center;
