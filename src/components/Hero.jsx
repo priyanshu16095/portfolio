@@ -13,7 +13,7 @@ function Hero() {
     <div className='hero'>
       <div className="heroBody">
         
-        <div className="heroBox flex-s">
+        <div className="heroBox">
           
           <div className="heroContainer flex-v">
             <p className='heroA'>Hi, I'm</p>
@@ -22,7 +22,6 @@ function Hero() {
               <h1 className='heroB build'>I build things for the web</h1>
             </div>
             <p className='heroA'>Full Stack Development and Devops</p>
-            {/* <p className='like'>I like to craft solid and scalable frontend products with great user experiences.</p> */}
             <div className="resheroIcons flex">
               <a href="" className='round'><LinkedInIcon className='icon' /></a>
               <a href="https://github.com/priyanshu16095" target='_blank' className='round'><GitHubIcon className='icon' /></a>
@@ -43,7 +42,6 @@ function Hero() {
               <p className="key">First Year Engineering student looking for internships.</p>
             </div>
           </div>
-
 
         </div>
 

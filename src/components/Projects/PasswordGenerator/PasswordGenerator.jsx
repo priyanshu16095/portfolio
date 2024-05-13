@@ -49,7 +49,7 @@ function PasswordGenerator() {
 
                 <div className="passwordgenChoices flex-v">
                     <div className="charLength flex-v">
-                        <span className='flex-h'>Character Length <label>{length}</label></span>
+                        <p className='flex-h'>Character Length <label>{length}</label></p>
                         <input value={length} type="range" min={4} max={20} onChange={e => setLength(e.target.value)} />
                     </div>
 

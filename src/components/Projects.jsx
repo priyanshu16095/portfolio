@@ -2,8 +2,7 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import contactapplication from '../../public/contact-application.img'
-
+import gitSvgIcon from '../assets/gitSvgIcon.svg'
 
 function Projects() {
   const data = [
@@ -27,18 +26,12 @@ function Projects() {
     },
     {
       img: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      name: 'Whatsapp Clone',
-      desc: 'React, React Redux, Firebase, Socket.IO',
-      link: ''
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       name: 'Student Management System',
       desc: 'Java Swing, MySQL',
       link: ''
     },
     {
-      img: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      img: '../assets/gitSvgIcon.svg',
       name: 'Explore all my projects',
       desc: 'On Github',
       link: 'https://github.com/priyanshu16095'
