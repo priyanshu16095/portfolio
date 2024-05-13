@@ -169,11 +169,7 @@
     display: flex;
     gap: 1rem;
 }
-.contactContainer {
-    flex: 0.5;
-}
 .contactwithme {
-    flex: 0.5;
     border: none !important;
     gap: 1rem;
 }
@@ -236,7 +232,7 @@
     overflow: hidden;
 }
 .projectCard__img {
-    height: 10rem;
+    height: 11rem;
     margin: auto;
     margin-bottom: .5rem;
     border-radius: 8px;
