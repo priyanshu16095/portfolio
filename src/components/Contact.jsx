@@ -10,6 +10,7 @@ function Contact() {
   return (
     <div className='contact'>
       <div className="contactBody">
+
         <div className="contactContainer">
           <div className="getintouch flex-v container">
             <div className="contactHeader flex-h">
@@ -26,6 +27,7 @@ function Contact() {
             </div>
           </div>
         </div>
+        
         <div className="contactwithme container flex-v">
           <p className="title">Contact With Me</p>
           <div className="contactwithmeContianer flex-v">

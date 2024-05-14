@@ -7,7 +7,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme } from '../theme-context';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
-
+import Sidebar from './Sidebar'
 
 function Navbar() {
   useGSAP(() => {
@@ -28,7 +28,7 @@ function Navbar() {
             <div className="round themeIcon" onClick={toggleTheme}>
               {theme === 'dark' ? <DarkModeIcon className='icon' /> : <LightModeIcon className='icon' />}
             </div>
-            <div className="round openIconDiv"><MenuIcon className='openIcon icon' /></div>
+            <Sidebar />
           </div>
         </div>
       </div>

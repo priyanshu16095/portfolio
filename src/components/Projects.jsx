@@ -9,7 +9,7 @@ function Projects() {
     {
       img: 'disney.png',
       name: 'Disney+ Clone',
-      desc: 'React, React Redux, Firebase, OMDB API',
+      desc: 'React, React Redux, Firebase',
       link: 'https://github.com/priyanshu16095/react-clones/tree/master/Disney-Plus'
     },
     {
@@ -50,9 +50,16 @@ function Projects() {
     pauseOnHover: true,
     responsive: [
       {
-        breakpoint: 705,
+        breakpoint: 800,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -70,7 +77,7 @@ function Projects() {
             <Slider {...settings}>
               {data && data.map((item, index) => (
                 <div className='projectCard' key={index}>
-                    <img src={item.img} className='projectCard__img' />
+                    {/* <img src={item.img} className='projectCard__img' /> */}
                     <p className="md-font">{item.name}</p>
                     <p className="key">{item.desc}</p>        
                     <button className='button' onClick={() => window.open(item.link, '_blank')}>View</button>
