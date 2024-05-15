@@ -337,7 +337,7 @@ button:hover {
 
 @media all and (max-width: 800px) {
   .modalpageContainer p {
-    line-height: 1.4rem;
+    line-height: 1.45rem;
 }
   .displayNone {
     display: none;
