@@ -1,6 +1,6 @@
 import React from 'react'
 import '../projects.css'
-import { IoCloseSharp } from "react-icons/io5";
+import CloseIcon from '@mui/icons-material/Close';
 
 function Modal({ onClose }) {
   return (
@@ -9,7 +9,7 @@ function Modal({ onClose }) {
       <div className="modalBody flex-v">
         <div className="modalHeader flex-h">
           <p className='md-font'>Modal Pop-up</p>
-          <button onClick={onClose}><IoCloseSharp /></button>
+          <CloseIcon onClick={onClose} className='icon' />
         </div>
         <div className="modalContent">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores itaque mollitia facere optio, hic distinctio quia libero nam enim perferendis, deserunt, eaque amet necessitatibus dolor quidem repellat culpa impedit.

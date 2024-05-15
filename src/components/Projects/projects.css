@@ -80,11 +80,14 @@
     font-size: 1rem;
 }
 .tabRemoveButton .icon:hover {
-    color: wheat;
+    color: white;
     background-color: red;
 }
 .tabName .tabRemoveButton {
     margin-top: 0.2rem;
+}
+.tabsHeader .button {
+    border-radius: 0px 8px 0px 0px;
 }
 
 .passwordgenContainer {
@@ -326,7 +329,9 @@
 }
 .menuitemLabel {
     cursor: pointer;
+    width: fit-content;
+    gap: 0.5rem;
 }
-.menulist {
-    gap: 1rem;
+.menuitemLabel .icon {
+    margin-top: 0.5rem;
 }

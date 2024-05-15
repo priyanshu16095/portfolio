@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import '../projects.css'
 import data from './data'
+import { KeyboardArrowDown, KeyboardArrowUp } from '@mui/icons-material'
 
 function Accordion() {
     const [selectedItemIndex, setSelectedItemIndex] = useState(-1)
@@ -39,9 +40,9 @@ function Accordion() {
                         {data && data.length ?
                             data.map((box, index) => (
                                 <div className='accordionBox lightpContainer flex-v' key={index}>
-                                    <div className="accordionBoxQuestion flex-h">
+                                    <div className="accordionBoxQuestion pointer flex-h" onClick={enableMultiSelection ? () => handleMultiSelection(index) : () => handleSingleSelection(index)}>
                                         <p className="md-font">{box.question}</p>
-                                        <button className="button" onClick={enableMultiSelection ? () => handleMultiSelection(index) : () => handleSingleSelection(index)}>{enableMultiSelection ? multipleId.indexOf(index) !== -1 ? '-' : '+' : selectedItemIndex === index ? '-' : '+'}</button>
+                                        {enableMultiSelection ? multipleId.indexOf(index) !== -1 ? <KeyboardArrowUp className='icon' /> : <KeyboardArrowDown className='icon' /> : selectedItemIndex === index ? <KeyboardArrowUp className='icon' /> : <KeyboardArrowDown className='icon' />}
                                     </div>
                                     <div className="accordionBoxAnswer">
                                         {enableMultiSelection ? multipleId.indexOf(index) !== -1 ? <p>{data[index].answer}</p> : null : selectedItemIndex === index ? <p>{data[index].answer}</p> : null}

@@ -42,7 +42,7 @@ function Tabs() {
                     <button className="button" onClick={addTab}>Add</button>
                 </div>
                 <div className="tabsContent">
-                    <div className="tabContent">{tabs.length ?  tabs[selectedTab]?.content : null}</div>
+                    <div className="tabContent">{tabs.length ?  <p>{tabs[selectedTab]?.content}</p> : null}</div>
                 </div>
             </div>
         </div>

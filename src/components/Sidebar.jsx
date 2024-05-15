@@ -7,6 +7,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import MenuIcon from '@mui/icons-material/Menu';
+import './style.css'
 
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = React.useState({ right: false })
@@ -23,11 +24,14 @@ export default function SwipeableTemporaryDrawer() {
   }
 
   const sidebarData = [
-    { name: "About", icon: <NavigateNextIcon /> },
-    { name: "Projects", icon: <NavigateNextIcon /> },
-    { name: "Mini-Projects", icon: <NavigateNextIcon /> },
-    { name: "Contact", icon:  <NavigateNextIcon />},
+    { name: "About", icon: <NavigateNextIcon className='icon' /> },
+    { name: "Projects", icon: <NavigateNextIcon className='icon' /> },
+    { name: "Mini-Projects", icon: <NavigateNextIcon className='icon' /> },
+    { name: "Contact", icon:  <NavigateNextIcon className='icon' />},
   ]
+
+  function handleClick() {
+  }
 
   const list = (anchor) => (
     <Box
@@ -39,7 +43,7 @@ export default function SwipeableTemporaryDrawer() {
       <List>
         {sidebarData.map((item, index) => (
           <ListItem key={index} disablePadding>
-            <ListItemButton>
+            <ListItemButton onClick={handleClick}>
               <ListItemIcon>{item.icon}</ListItemIcon>
               <p className="link">{item.name}</p>
             </ListItemButton>
@@ -50,9 +54,9 @@ export default function SwipeableTemporaryDrawer() {
   );
 
   return (
-    <div>
+    <div className='sidebar'>
       {['right'].map((anchor) => (
-        <React.Fragment key={anchor}>
+        <React.Fragment key={anchor} >
           {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
           <div className="round openIconDiv" onClick={toggleDrawer(anchor, true)}><MenuIcon className='openIcon icon' /></div>
           <SwipeableDrawer
@@ -61,7 +65,7 @@ export default function SwipeableTemporaryDrawer() {
             onClose={toggleDrawer(anchor, false)}
             onOpen={toggleDrawer(anchor, true)}
           >
-            {list(anchor)}
+            <div className="drawer">{list(anchor)}</div>
           </SwipeableDrawer>
         </React.Fragment>
       ))}

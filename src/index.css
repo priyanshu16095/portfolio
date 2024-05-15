@@ -50,6 +50,8 @@
   --getintouchBackgroundColor: #000000;
 
   --heroRightBackgrounColor: #111111;
+
+  --clr-whiteTo111: #111;
 } 
 [data-theme="light"] {
   --bodyBackgrounColor: white;
@@ -91,6 +93,13 @@
   --getintouchBackgroundColor: #f5f5f7;
 
   --heroRightBackgrounColor: #f5f5f7;
+
+  --clr-whiteTo111: white;
+}
+
+.drawer {
+  height: 100%;
+  background-color: var(--clr-whiteTo111);
 }
 
 .navbarOpen {
@@ -172,6 +181,11 @@ body {
   max-width: 1450px;
   margin: auto;
 }
+button {
+  background: none;
+  padding: none;
+  border: none;
+}
 .app::-webkit-scrollbar {
   display: none;
 }
@@ -182,6 +196,9 @@ body::-webkit-scrollbar {
   min-height: 100%;
   max-width: 100%;
   margin: auto;
+}
+.pointer {
+  cursor: pointer;
 }
 
 /* FONTS------------------------------------------------- */
@@ -330,6 +347,7 @@ button:hover {
 }
 .icon {
   color: var(--iconFontColor);
+  cursor: pointer;
 }
 .skillsIcon {
   width: 3rem;
@@ -357,7 +375,7 @@ button:hover {
     font-size: 1rem;
   }
   .link {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
   }
   .heroA {

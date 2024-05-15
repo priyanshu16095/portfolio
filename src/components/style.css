@@ -228,6 +228,12 @@
     border-radius: 8px;
     position: relative;
     overflow: hidden;
+    transition: all 0.2s;
+}
+.projectCard:hover {
+    transform: scale(1.05);
+    border-radius: 0px;
+    border: none;
 }
 .projectCard__img {
     height: 12rem;
@@ -249,6 +255,14 @@
 }
 .skillsIcons {
     gap: 5rem;
+}
+.skillsIcon {
+    transition: all 0.08s;
+    cursor: pointer;
+}
+.skillsIcon:hover {
+    transform: scale(1.08);
+    /* opacity: 0.8; */
 }
 .icons {
     flex-wrap: wrap;
