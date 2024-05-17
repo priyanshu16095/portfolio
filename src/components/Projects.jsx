@@ -2,6 +2,7 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// import gitSvgIcon from '../assets/gitSvgIcon.svg'
 import gitSvgIcon from '../assets/gitSvgIcon.svg'
 
 function Projects() {
@@ -77,7 +78,7 @@ function Projects() {
             <Slider {...settings}>
               {data && data.map((item, index) => (
                 <div className='projectCard' key={index}>
-                    {/* <img src={item.img} className='projectCard__img' /> */}
+                    <img src={item.img} className='projectCard__img' />
                     <p className="md-font">{item.name}</p>
                     <p className="key">{item.desc}</p>        
                     <button className='button' onClick={() => window.open(item.link, '_blank')}>View</button>

@@ -221,7 +221,6 @@
     margin: 0 .5rem;
 }
 .projectCard {
-    /* height: fit-content; */
     height: 17rem;
     padding: 1rem 1rem;
     align-content: end;
@@ -230,7 +229,11 @@
     overflow: hidden;
     transition: all 0.2s;
 }
-.projectCard:hover {
+.projectCard img {
+    width: 20rem;
+    margin: auto;
+}
+/* .projectCard:hover {
     transform: scale(1.05);
     border-radius: 0px;
     border: none;
@@ -243,7 +246,7 @@
 }
 .projectCard__img .img {
     width: 100%;
-}
+} */
 
 /* WHATIKNOW---------------------------------- */
 .whatiknowContainer {
