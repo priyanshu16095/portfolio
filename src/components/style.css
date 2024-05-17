@@ -221,24 +221,29 @@
     margin: 0 .5rem;
 }
 .projectCard {
-    height: 17rem;
-    padding: 1rem 1rem;
-    align-content: end;
+    height: 20rem;
+    padding: 0.5rem 1rem;
+    align-content: center;
     border-radius: 8px;
-    position: relative;
     overflow: hidden;
     transition: all 0.2s;
+    gap: 1rem;
 }
 .projectCard img {
     width: 20rem;
     margin: auto;
 }
-/* .projectCard:hover {
-    transform: scale(1.05);
+.projectCard__bottom {
+    margin-top: 1rem;
+    justify-content: end;
+}
+.projectCard:hover {
+    transform: scale(1.03);
+    cursor: pointer;
     border-radius: 0px;
     border: none;
 }
-.projectCard__img {
+/* .projectCard__img {
     height: 12rem;
     margin: auto;
     margin-bottom: .5rem;

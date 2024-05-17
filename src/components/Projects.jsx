@@ -20,19 +20,19 @@ function Projects() {
       link: 'https://github.com/priyanshu16095/contact-application'
     },
     {
-      img: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      img: 'spring-verify.png',
       name: 'Email Verification API',
       desc: 'Java Spring, SMTP, Rest API, MySQL',
       link: ''
     },
     {
-      img: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      img: 'stu-management.png',
       name: 'Student Management System',
       desc: 'Java Swing, MySQL',
       link: ''
     },
     {
-      img: '../assets/gitSvgIcon.svg',
+      img: 'github-profile.png',
       name: 'Explore all my projects',
       desc: 'On Github',
       link: 'https://github.com/priyanshu16095'
@@ -77,11 +77,13 @@ function Projects() {
           <div className="projectsCards flex-v">
             <Slider {...settings}>
               {data && data.map((item, index) => (
-                <div className='projectCard' key={index}>
-                    <img src={item.img} className='projectCard__img' />
+                <div className='projectCard flex-v' key={index} onClick={() => window.open(item.link, '_blank')}>
+                  <img src={item.img} className='projectCard__img' />
+                  <div className="projectCard__bottom flex-v">
                     <p className="md-font">{item.name}</p>
-                    <p className="key">{item.desc}</p>        
+                    <p className="key">{item.desc}</p>
                     <button className='button' onClick={() => window.open(item.link, '_blank')}>View</button>
+                  </div>
                 </div>
               ))}
             </Slider>
