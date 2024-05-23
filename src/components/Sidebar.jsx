@@ -66,7 +66,7 @@ export default function SwipeableTemporaryDrawer() {
             onOpen={toggleDrawer(anchor, true)}
           >
             <div className="drawer">
-              <p className='sidebar__info md-font flex-c'>Under construction.</p>
+              <p className='sidebar__info md-font flex-c'>Under Construction.</p>
               {list(anchor)}
               </div>
           </SwipeableDrawer>
