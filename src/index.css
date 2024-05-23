@@ -546,13 +546,12 @@ button:hover {
   }
 
   .projectCard {
-    /* background-color: white; */
     background-color: var(--whiteTo111);
+    height: fit-content;
   }
   .projectCard__img {
     width: 18rem;
     margin: auto;
-    /* border: 1px solid var(--lightContainerBorderColor); */
   }
 }
 

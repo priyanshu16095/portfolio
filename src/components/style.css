@@ -241,12 +241,13 @@
     margin: 0 .5rem;
 }
 .projectCard {
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
     border-radius: 8px;
     gap: 0.5rem;
-    /* height: 18rem; */
+    /* height: 20rem; */
     overflow: hidden;
     justify-content: space-between;
+    background-color: var(--whiteTo111);
 }
 .projectCard img {
     border-radius: 8px;
