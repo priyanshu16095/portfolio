@@ -54,6 +54,7 @@
   --clr-whiteTo111: #111;
 
   --whiteToblack: white;
+  --whiteTo111: #111;
 } 
 [data-theme="light"] {
   --bodyBackgrounColor: white;
@@ -85,20 +86,21 @@
   --hiFontColor: black;
 
   --modalBackgrounColor: white;
-
+  
   --contactInputBorderColor: lightgray;
   --contactInputBackgroundColor: white;
-
+  
   --projectCardBorderColor: lightgray;
-
+  
   --navbarOpenBackgroundColor: lightgray;
   --getintouchBackgroundColor: #f5f5f7;
-
+  
   --heroRightBackgrounColor: #f5f5f7;
   
   --clr-whiteTo111: white;
 
   --whiteToblack: black;
+  --whiteTo111: white;
 }
 
 .drawer {
@@ -544,7 +546,8 @@ button:hover {
   }
 
   .projectCard {
-    background-color: white;
+    /* background-color: white; */
+    background-color: var(--whiteTo111);
   }
   .projectCard__img {
     width: 18rem;

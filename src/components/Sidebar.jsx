@@ -27,7 +27,7 @@ export default function SwipeableTemporaryDrawer() {
     { name: "About", icon: <NavigateNextIcon className='icon' /> },
     { name: "Projects", icon: <NavigateNextIcon className='icon' /> },
     { name: "Mini-Projects", icon: <NavigateNextIcon className='icon' /> },
-    { name: "Contact", icon:  <NavigateNextIcon className='icon' />},
+    { name: "Contact", icon: <NavigateNextIcon className='icon' /> },
   ]
 
   function handleClick() {
@@ -57,7 +57,7 @@ export default function SwipeableTemporaryDrawer() {
     <div className='sidebar'>
       {['right'].map((anchor) => (
         <React.Fragment key={anchor} >
-          {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
+          {/* <button onClick={toggleDrawer(anchor, true)}>{anchor}</button> */}
           <div className="round openIconDiv" onClick={toggleDrawer(anchor, true)}><MenuIcon className='openIcon icon' /></div>
           <SwipeableDrawer
             anchor={anchor}
@@ -65,7 +65,10 @@ export default function SwipeableTemporaryDrawer() {
             onClose={toggleDrawer(anchor, false)}
             onOpen={toggleDrawer(anchor, true)}
           >
-            <div className="drawer">{list(anchor)}</div>
+            <div className="drawer">
+              <p className='sidebar__info md-font flex-c'>This part of the website is under construction.</p>
+              {list(anchor)}
+              </div>
           </SwipeableDrawer>
         </React.Fragment>
       ))}

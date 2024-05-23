@@ -262,3 +262,9 @@
     align-items: center;
     padding-bottom: 2rem;
 }
+
+.sidebar__info {
+    background-color: red;
+    color: white !important;
+    padding: 0.5rem;
+}
