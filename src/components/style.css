@@ -225,6 +225,7 @@
     border-radius: 8px;
     gap: 0.5rem;
     /* height: 18rem; */
+    overflow: hidden;
     justify-content: space-between;
 }
 
