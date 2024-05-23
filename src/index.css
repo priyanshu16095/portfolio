@@ -375,10 +375,15 @@ button:hover {
     font-weight: 500;
     font-size: 1.3rem;
   }
-  p, .md-font, .link {
-    font-weight: 500;
-    /* font-size: 16px; */
+  p {
     font-size: 1rem;
+  }
+  .link {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .md-font {
+    font-size: 1.1rem;
   }
   .heroA {
     font-size: 1.1rem;
