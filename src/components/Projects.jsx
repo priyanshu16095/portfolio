@@ -23,13 +23,13 @@ function Projects() {
       img: 'spring-verify.png',
       name: 'Email Verification API',
       desc: 'Java Spring, SMTP, Rest API, MySQL',
-      link: ''
+      link: 'https://github.com/priyanshu16095/spring-verify'
     },
     {
       img: 'stu-management.png',
       name: 'Student Management System',
       desc: 'Java Swing, MySQL',
-      link: ''
+      link: 'https://github.com/priyanshu16095/idea-projects/tree/master/swing/student-management-system'
     },
     {
       img: 'github-profile.png',
