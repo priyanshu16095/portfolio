@@ -30,10 +30,10 @@ function SearchAutoComplete() {
     fetchAPI()
   }, [])
   if (isLoading) {
-    return <p className="center-both">Loading...</p>
+    return <p className="md-font center-both">Loading...</p>
   }
   if (error) {
-    return <p className="center-both">{error}</p>
+    return <p className="md-font center-both">{error}</p>
   }
 
   function handleChange(e) {
