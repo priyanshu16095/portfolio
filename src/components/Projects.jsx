@@ -74,15 +74,18 @@ function Projects() {
 
           <p className="title">Projects</p>
 
+          {/* onClick={() => window.open(item.link, '_blank')} */}
           <div className="projectsCards flex-v">
             <Slider {...settings}>
               {data && data.map((item, index) => (
-                <div className='projectCard flex-v' key={index} onClick={() => window.open(item.link, '_blank')}>
-                  <img src={item.img} className='projectCard__img' />
-                  <div className="projectCard__bottom flex-v">
-                    <p className="md-font">{item.name}</p>
-                    <p className="key">{item.desc}</p>
-                    <button className='button' onClick={() => window.open(item.link, '_blank')}>View</button>
+                <div key={index} >
+                  <div className='projectCard flex-v'>
+                    <img src={item.img} className='projectCard__img' />
+                    <div className="projectCard__bottom flex-v">
+                      <p className="md-font">{item.name}</p>
+                      <p className="key">{item.desc}</p>
+                      <button className='button' onClick={() => window.open(item.link, '_blank')}>View</button>
+                    </div>
                   </div>
                 </div>
               ))}

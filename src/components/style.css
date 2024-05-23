@@ -221,37 +221,12 @@
     margin: 0 .5rem;
 }
 .projectCard {
-    height: 20rem;
-    padding: 0.5rem 1rem;
-    align-content: center;
+    padding: 0.5rem;
     border-radius: 8px;
-    overflow: hidden;
-    transition: all 0.2s;
-    gap: 1rem;
+    gap: 0.5rem;
+    /* height: 18rem; */
+    justify-content: space-between;
 }
-.projectCard img {
-    width: 20rem;
-    margin: auto;
-}
-.projectCard__bottom {
-    margin-top: 1rem;
-    justify-content: end;
-}
-.projectCard:hover {
-    transform: scale(1.03);
-    cursor: pointer;
-    border-radius: 0px;
-    border: none;
-}
-/* .projectCard__img {
-    height: 12rem;
-    margin: auto;
-    margin-bottom: .5rem;
-    border-radius: 8px;
-}
-.projectCard__img .img {
-    width: 100%;
-} */
 
 /* WHATIKNOW---------------------------------- */
 .whatiknowContainer {
