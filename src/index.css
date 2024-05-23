@@ -395,6 +395,12 @@ button:hover {
     font-size: 1rem;
     color: white !important;
   }
+  .md-font {
+    font-size: 1rem;
+  }
+  .contactInput {
+    font-size: 1rem;
+  }
   .sidebarBody, .progressbarBody, .loadmoreBody, .paginationBody, .tabsBody, .passwordgenBody, .searchBody, .imagesliderBody, .accordionBody, .modalpageBody, .weatherBody, .scrollbody, .tictactoeBody, .reactpageBody, .javapageBody, .flowingnotesBody, .dadnotesBody, .quizBody, .todolistBody, .currencyBody {
     gap: 1rem;
   }
