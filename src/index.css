@@ -536,9 +536,13 @@ button:hover {
     width: 2.3rem;
   }
 
+  .projectCard {
+    background-color: white;
+  }
   .projectCard__img {
-    width: 17rem;
+    width: 18rem;
     margin: auto;
+    /* border: 1px solid var(--lightContainerBorderColor); */
   }
 }
 

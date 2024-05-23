@@ -228,6 +228,9 @@
     overflow: hidden;
     justify-content: space-between;
 }
+.projectCard img {
+    border-radius: 8px;
+}
 
 /* WHATIKNOW---------------------------------- */
 .whatiknowContainer {
