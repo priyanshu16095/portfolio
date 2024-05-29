@@ -248,9 +248,13 @@
     overflow: hidden;
     justify-content: space-between;
     background-color: var(--whiteTo111);
+    transition: all 0.9s;
 }
 .projectCard img {
     border-radius: 8px;
+}
+.projectCard:hover {
+    transform: scale(1.03);
 }
 
 /* WHATIKNOW---------------------------------- */

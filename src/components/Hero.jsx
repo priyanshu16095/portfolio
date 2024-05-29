@@ -11,7 +11,7 @@ function Hero() {
 
   function handleCopy() {
     navigator.clipboard.writeText('priyanshu16095@gmail.com')
-    alert('Email copied')
+    alert('✉️ Email copied!')
   }
 
   return (

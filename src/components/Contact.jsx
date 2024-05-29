@@ -9,7 +9,10 @@ import XIcon from '@mui/icons-material/X';
 function Contact() {
   function handleCopy() {
     navigator.clipboard.writeText('priyanshu16095@gmail.com')
-    alert('Email copied')
+    alert('✉️ Email copied!')
+  }
+  function handleSubmitMessage() {
+    alert("Message sent! 🎉🎉")
   }
   return (
     <div className='contact'>
@@ -27,7 +30,7 @@ function Contact() {
                 <input type="text" className="contactInput" placeholder='Email' />
               </div>
               <textarea placeholder='Message' cols="30" rows="5" className='messageInput contactInput' />
-              <div className="formButtonDiv flex-e"><button className="formButton button">Send Message</button></div>
+              <div className="formButtonDiv flex-e"><button className="formButton button" onClick={handleSubmitMessage}>Send Message</button></div>
             </div>
           </div>
         </div>
@@ -45,7 +48,7 @@ function Contact() {
             </div>
             <div className="icons flex">
             <a href="https://github.com/priyanshu16095" target='_blank' className='round'><GitHubIcon className='icon' /></a>
-              <a href="#" className='round'><LinkedInIcon className='icon' /></a>
+              <a href="https://www.linkedin.com/in/priyanshu16095/" className='round'><LinkedInIcon className='icon' /></a>
               {/* <div className="round"><XIcon className='icon' /> </div> */}
               <div className="round"><EmailIcon onClick={handleCopy} className='icon' /></div>
             </div>
