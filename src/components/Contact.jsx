@@ -7,6 +7,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
 
 function Contact() {
+  function handleCopy() {
+    navigator.clipboard.writeText('priyanshu16095@gmail.com')
+    alert('Email copied')
+  }
   return (
     <div className='contact'>
       <div className="contactBody">
@@ -42,7 +46,8 @@ function Contact() {
             <div className="icons flex">
             <a href="https://github.com/priyanshu16095" target='_blank' className='round'><GitHubIcon className='icon' /></a>
               <a href="#" className='round'><LinkedInIcon className='icon' /></a>
-              <div className="round"><XIcon className='icon' /> </div>
+              {/* <div className="round"><XIcon className='icon' /> </div> */}
+              <div className="round"><EmailIcon onClick={handleCopy} className='icon' /></div>
             </div>
           </div>
         </div>

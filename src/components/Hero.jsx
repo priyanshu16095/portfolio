@@ -28,7 +28,7 @@ function Hero() {
             </div>
             <p className='heroA fullstack'>Full Stack Development and Devops</p>
             <div className="resheroIcons flex">
-              <a href="www.linkedin.com/in/priyanshu16095" target='_blank' className='round'><LinkedInIcon className='icon' /></a>
+              <a href="https://www.linkedin.com/in/priyanshu16095/" target='_blank' className='round'><LinkedInIcon className='icon' /></a>
               <a href="https://github.com/priyanshu16095" target='_blank' className='round'><GitHubIcon className='icon' /></a>
               <div className="round"><EmailIcon onClick={handleCopy} className='icon' /></div>
             </div>
