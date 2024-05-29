@@ -283,6 +283,14 @@
     align-items: center;
     padding-bottom: 2rem;
 }
+.footer {
+    position: relative;
+}
+.footer__svg {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
 
 .sidebar__info {
     background-color: red;

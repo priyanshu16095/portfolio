@@ -9,6 +9,11 @@ function Hero() {
     window.open('https://github.com/priyanshu16095/resume/blob/main/resume.pdf', '_blank')
   }
 
+  function handleCopy() {
+    navigator.clipboard.writeText('priyanshu16095@gmail.com')
+    alert('Email copied')
+  }
+
   return (
     <div className='hero'>
       <div className="heroBody">
@@ -25,7 +30,7 @@ function Hero() {
             <div className="resheroIcons flex">
               <a href="www.linkedin.com/in/priyanshu16095" target='_blank' className='round'><LinkedInIcon className='icon' /></a>
               <a href="https://github.com/priyanshu16095" target='_blank' className='round'><GitHubIcon className='icon' /></a>
-              <a href="#" className='icon round'><EmailIcon /></a>
+              <div className="round"><EmailIcon onClick={handleCopy} className='icon' /></div>
             </div>
             <button className="button" onClick={handleClick}>Download CV</button>
           </div>
