@@ -14,6 +14,8 @@ import kubernetesvgIcon from '../assets/kubernetesSvgIcon.svg'
 import redisSvgIcon from '../assets/redisSvgIcon.svg'
 import tsSvgIcon from '../assets/tsSvgIcon.svg'
 import figmaSvgIcon from '../assets/figmaSvgIcon.svg'
+import ansible from '../assets/ansible.svg'
+import jenkins from '../assets/jenkins.svg'
 
 function WhatIKnow() {
     return (
@@ -47,6 +49,7 @@ function WhatIKnow() {
                                     <img src={tsSvgIcon} className='skillsIcon' />
                                     <img src={kubernetesvgIcon} className='skillsIcon' />
                                     <img src={redisSvgIcon} className='skillsIcon' />
+                                    {/* <img src={ansible} className='skillsIcon' /> */}
                                 </div>
                             </div>
                         </div>

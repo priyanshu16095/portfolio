@@ -26,7 +26,8 @@ function Projects() {
       link: 'https://github.com/priyanshu16095/spring-verify'
     },
     {
-      img: 'stu-management.png',
+      // img: 'stu-management.png',
+      img: 'student-manag.png',
       name: 'Student Management System',
       desc: 'Java Swing, MySQL',
       link: 'https://github.com/priyanshu16095/idea-projects/tree/master/swing/student-management-system'
