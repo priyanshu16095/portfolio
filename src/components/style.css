@@ -228,6 +228,14 @@
     height: 2.8rem;
     margin-top: 0.5rem;
 }
+.send__icon {
+    margin: 0.1rem 0.5rem 0 0;
+    font-size: 1.1rem;
+}
+.download__icon {
+    margin: 0.1rem 0.5rem 0 0;
+    font-size: 0.9rem;
+}
 
 /* PROJECTS------------------------------------- */
 .projectsContainer {

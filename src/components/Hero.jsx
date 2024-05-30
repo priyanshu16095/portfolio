@@ -3,6 +3,7 @@ import './style.css'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
+import { FaDownload } from "react-icons/fa";
 
 function Hero() {
   function handleClick() {
@@ -32,7 +33,7 @@ function Hero() {
               <a href="https://github.com/priyanshu16095" target='_blank' className='round'><GitHubIcon className='icon' /></a>
               <div className="round"><EmailIcon onClick={handleCopy} className='icon' /></div>
             </div>
-            <button className="button" onClick={handleClick}>Download CV</button>
+            <button className="button flex-c" onClick={handleClick}><FaDownload className='download__icon' />Download CV</button>
           </div>
 
           <div className="heroRight displayNone">

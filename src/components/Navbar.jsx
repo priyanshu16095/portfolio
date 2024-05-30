@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './style.css';
 import CloseIcon from '@mui/icons-material/Close';
 import LightModeIcon from '@mui/icons-material/LightMode';
@@ -19,6 +19,25 @@ function Navbar() {
   })
 
   const { theme, toggleTheme } = useTheme();
+
+  // const[currentTheme, setCurrentTheme] = useState("light")
+  // function toggleCurrentTheme() {
+  //   if(currentTheme === "light") {
+  //     setCurrentTheme("dark")
+  //     return 
+  //   }
+  //   setCurrentTheme("light")
+  // }
+  // useEffect(() => {
+  //   document.documentElement.setAttribute("data-theme", currentTheme)
+  //   localStorage.setItem('Theme', currentTheme);
+  // }, [currentTheme]);
+  // useEffect(() => {
+  //   const savedTheme = localStorage.getItem('Theme');
+  //   if (savedTheme) {
+  //     setCurrentTheme(savedTheme);
+  //   }
+  // }, []);
 
   return (
     <div className='navbar'>

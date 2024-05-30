@@ -5,6 +5,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
+import { IoIosSend } from "react-icons/io";
 
 function Contact() {
   function handleCopy() {
@@ -30,7 +31,7 @@ function Contact() {
                 <input type="text" className="contactInput" placeholder='Email' />
               </div>
               <textarea placeholder='Message' cols="30" rows="5" className='messageInput contactInput' />
-              <div className="formButtonDiv flex-e"><button className="formButton button" onClick={handleSubmitMessage}>Send Message</button></div>
+              <div className="formButtonDiv flex-e"><button className="formButton button flex-c gap-1" onClick={handleSubmitMessage}><IoIosSend className='send__icon' />Send Message</button></div>
             </div>
           </div>
         </div>
