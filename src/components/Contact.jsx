@@ -23,7 +23,8 @@ function Contact() {
           <div className="getintouch flex-v container">
             <div className="contactHeader flex-h">
               <p className="title">Get In Touch</p>
-              <p className='key'>React Hook Form</p>
+              {/* <p className='key'>React Hook Form</p> */}
+              <p className='key'>I'm Just A Message Away!</p>
             </div>
             <div className="form flex-v">
               <div className="formNameEmail flex">
