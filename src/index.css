@@ -555,3 +555,12 @@ button:hover {
   }
 }
 
+.confetti-wrapper {
+  transition: opacity 1s ease-in-out;
+}
+.confetti-wrapper.hide {
+  opacity: 0;
+}
+.confetti-wrapper.show {
+  opacity: 1;
+}
