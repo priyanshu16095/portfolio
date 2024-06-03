@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 const AnimationContext = createContext()
 
 const AnimationContextProvider = ({children}) => {
-    const[showAnimation, setShowAnimation] = useState(false)
+    const[showAnimation, setShowAnimation] = useState(true)
     return (
         <AnimationContext.Provider value={{showAnimation, setShowAnimation}}>
             {children}
