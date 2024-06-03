@@ -29,7 +29,7 @@ function Navbar() {
       <div className="navbarBody">
         <div className="navbarContainer flex-e">
           <div className="navIcons flex">
-            <div className="round" onClick={() => setShowAnimation(!showAnimation)}>{showAnimation ? <AnimationIcon className='icon' /> : <MotionPhotosOffIcon className='icon' />}</div>
+            <div className="round" onClick={() => setShowAnimation(!showAnimation)}>{showAnimation ? <MotionPhotosOffIcon className='icon' /> : <AnimationIcon className='icon' />}</div>
             <div className="round themeIcon" onClick={toggleTheme}>
               {theme === 'dark' ? <DarkModeIcon className='icon' /> : <LightModeIcon className='icon' />}
             </div>

@@ -13,13 +13,13 @@ function Home() {
   return (
     <div className='home'>
       <div className="homeBody flex-v">
-        <div className="block"><Navbar /></div>
-        <div className={showAnimation ? 'block' : ''}><Hero /></div>
-        <div className={showAnimation ? 'block' : ''}><WhatIKnow /></div>
+        <Navbar />
+        <Hero />
+        <WhatIKnow />
         <div className={showAnimation ? 'block' : ''}><Projects /></div>
         <div className={showAnimation ? 'block' : ''}><MiniProjects /></div>
         <div className={showAnimation ? 'block' : ''}><Contact /></div>
-        <div className={showAnimation ? 'block' : ''}><Footer /></div>
+        <Footer />
       </div>
     </div>
   )
