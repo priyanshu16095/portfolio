@@ -1,9 +1,10 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Home from './components/Home'
 import { ThemeProvider } from './theme-context'
 import LocomotiveScroll from 'locomotive-scroll';
 import Confetti from 'react-confetti'
 import useWindowSize from 'react-use/lib/useWindowSize'
+import AnimationContextProvider from './AnimationContext';
 
 function App() {
   const { width, height } = useWindowSize()
@@ -19,11 +20,13 @@ function App() {
   return (
     <div className='app'>
       <div className="appBody">
-        <div className={`confetti-wrapper ${showConfetti ? 'show' : 'hide'}`}>
+        {/* <div className={`confetti-wrapper ${showConfetti ? 'show' : 'hide'}`}>
           <Confetti width={width} height={height} />
-        </div>
+        </div> */}
         <ThemeProvider>
-          <Home />
+          <AnimationContextProvider>
+            <Home />
+          </AnimationContextProvider>
         </ThemeProvider>
       </div>
     </div>

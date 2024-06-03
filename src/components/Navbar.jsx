@@ -8,6 +8,9 @@ import { useTheme } from '../theme-context';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import Sidebar from './Sidebar'
+import AnimationIcon from '@mui/icons-material/Animation';
+import {AnimationState} from '../AnimationContext'
+import MotionPhotosOffIcon from '@mui/icons-material/MotionPhotosOff';
 
 function Navbar() {
   useGSAP(() => {
@@ -19,31 +22,14 @@ function Navbar() {
   })
 
   const { theme, toggleTheme } = useTheme();
-
-  // const[currentTheme, setCurrentTheme] = useState("light")
-  // function toggleCurrentTheme() {
-  //   if(currentTheme === "light") {
-  //     setCurrentTheme("dark")
-  //     return 
-  //   }
-  //   setCurrentTheme("light")
-  // }
-  // useEffect(() => {
-  //   document.documentElement.setAttribute("data-theme", currentTheme)
-  //   localStorage.setItem('Theme', currentTheme);
-  // }, [currentTheme]);
-  // useEffect(() => {
-  //   const savedTheme = localStorage.getItem('Theme');
-  //   if (savedTheme) {
-  //     setCurrentTheme(savedTheme);
-  //   }
-  // }, []);
+  const{showAnimation, setShowAnimation} = AnimationState()
 
   return (
     <div className='navbar'>
       <div className="navbarBody">
         <div className="navbarContainer flex-e">
           <div className="navIcons flex">
+            <div className="round" onClick={() => setShowAnimation(!showAnimation)}>{showAnimation ? <AnimationIcon className='icon' /> : <MotionPhotosOffIcon className='icon' />}</div>
             <div className="round themeIcon" onClick={toggleTheme}>
               {theme === 'dark' ? <DarkModeIcon className='icon' /> : <LightModeIcon className='icon' />}
             </div>

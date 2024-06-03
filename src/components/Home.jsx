@@ -6,18 +6,20 @@ import Hero from './Hero'
 import Projects from './Projects'
 import Footer from './Footer'
 import WhatIKnow from './WhatIKnow'
+import { AnimationState } from '../AnimationContext'
 
 function Home() {
+  const {showAnimation, setShowAnimation} = AnimationState()
   return (
     <div className='home'>
       <div className="homeBody flex-v">
-        <Navbar />
-        <Hero />
-        <WhatIKnow />
-        <Projects />
-        <div className="homeProjects"><MiniProjects /></div>
-        <Contact />
-        <Footer />
+        <div className="block"><Navbar /></div>
+        <div className={showAnimation ? 'block' : ''}><Hero /></div>
+        <div className={showAnimation ? 'block' : ''}><WhatIKnow /></div>
+        <div className={showAnimation ? 'block' : ''}><Projects /></div>
+        <div className={showAnimation ? 'block' : ''}><MiniProjects /></div>
+        <div className={showAnimation ? 'block' : ''}><Contact /></div>
+        <div className={showAnimation ? 'block' : ''}><Footer /></div>
       </div>
     </div>
   )

@@ -4,7 +4,6 @@ import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import XIcon from '@mui/icons-material/X';
 import { IoIosSend } from "react-icons/io";
 
 function Contact() {
@@ -15,6 +14,8 @@ function Contact() {
   function handleSubmitMessage() {
     alert("Message sent! 🎉🎉")
   }
+
+
   return (
     <div className='contact'>
       <div className="contactBody">
@@ -44,14 +45,13 @@ function Contact() {
               <LocationOnIcon className="icon" />
               <p className="md-font">Planet Earth</p>
             </div>
-            <div className="flex mailDiv">
+            <div className="flex mailDiv" >
               <EmailIcon className='icon' />
               <p className="md-font">priyanshu16095@gmail.com</p>
             </div>
             <div className="icons flex">
             <a href="https://github.com/priyanshu16095" target='_blank' className='round'><GitHubIcon className='icon' /></a>
               <a href="https://www.linkedin.com/in/priyanshu16095/" className='round'><LinkedInIcon className='icon' /></a>
-              {/* <div className="round"><XIcon className='icon' /> </div> */}
               <div className="round"><EmailIcon onClick={handleCopy} className='icon' /></div>
             </div>
           </div>
