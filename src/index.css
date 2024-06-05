@@ -362,7 +362,7 @@ button:hover {
 @media all and (max-width: 800px) {
   .modalpageContainer p {
     line-height: 1.45rem;
-}
+ }
   .displayNone {
     display: none;
   }
@@ -386,12 +386,6 @@ button:hover {
   }
   .md-font {
     font-size: 1.1rem;
-  }
-  .heroA {
-    font-size: 1.1rem;
-  }
-  .heroB {
-    font-size: 1.6rem;
   }
   .button {
     font-weight: 500;
@@ -553,14 +547,4 @@ button:hover {
     width: 18rem;
     margin: auto;
   }
-}
-
-.confetti-wrapper {
-  transition: opacity 1s ease-in-out;
-}
-.confetti-wrapper.hide {
-  opacity: 0;
-}
-.confetti-wrapper.show {
-  opacity: 1;
 }

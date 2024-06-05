@@ -18,9 +18,9 @@ function Hero() {
   return (
     <div className='hero'>
       <div className="heroBody">
-        
+
         <div className="heroBox flex-s">
-          
+
           <div className="heroContainer flex-v">
             <p className='heroA'>Hi, I'm</p>
             <div className="about">

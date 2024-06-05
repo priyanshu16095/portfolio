@@ -1,21 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import Home from './components/Home'
 import { ThemeProvider } from './theme-context'
-import LocomotiveScroll from 'locomotive-scroll';
-import Confetti from 'react-confetti'
-import useWindowSize from 'react-use/lib/useWindowSize'
+// import Confetti from 'react-confetti'
+// import useWindowSize from 'react-use/lib/useWindowSize'
 import AnimationContextProvider from './AnimationContext';
 
 function App() {
-  const { width, height } = useWindowSize()
-  const [showConfetti, setShowConfetti] = useState(true)
+  // const { width, height } = useWindowSize()
+  // const [showConfetti, setShowConfetti] = useState(true)
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowConfetti(false)
-    }, 3000)
-    return () => clearTimeout(timer)
-  }, [])
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setShowConfetti(false)
+  //   }, 3000)
+  //   return () => clearTimeout(timer)
+  // }, [])
 
   return (
     <div className='app'>

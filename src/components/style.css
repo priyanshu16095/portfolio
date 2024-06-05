@@ -336,6 +336,11 @@
 @media (max-width: 800px) {
     .block {
         animation: none;
-    }
-    
+    }   
+    .heroA {
+        font-size: 1.1rem;
+      }
+      .heroB {
+        font-size: 1.6rem;
+      }
 }
