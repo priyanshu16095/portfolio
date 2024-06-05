@@ -16,10 +16,10 @@ function Home() {
         <Navbar />
         <Hero />
         <WhatIKnow />
-        {/* <div className={showAnimation ? 'block' : ''}><Projects /></div>
-        <div className={showAnimation ? 'block' : ''}><MiniProjects /></div>
-        <div className={showAnimation ? 'block' : ''}><Contact /></div>
-        <Projects /> */}
+        {/* <div className={showAnimation ? 'block' : ''}><Projects /></div> */}
+        {/* <div className={showAnimation ? 'block' : ''}><MiniProjects /></div> */}
+        {/* <div className={showAnimation ? 'block' : ''}><Contact /></div> */}
+        <Projects />
         <MiniProjects />
         <Contact />
         <Footer />
